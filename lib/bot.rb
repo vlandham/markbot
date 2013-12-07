@@ -2,7 +2,7 @@ require 'twitter'
 require 'marky_markov'
 
 class Bot
-  DICTIONARY = File.join(File.expand_path(File.dirname(__FILE__)), "..", "math.txt")
+  DICTIONARY = File.join(File.expand_path(File.dirname(__FILE__)), "..", "hikes.txt")
 
   def initialize external_config = {}
     @client = Twitter::REST::Client.new do |config|
