@@ -8,6 +8,6 @@ get '/' do
   bot = Bot.new
   output = bot.tweet
   output
-  'you tweeted!'
+  "you tweeted! @notmarkblunk"
 end
 
