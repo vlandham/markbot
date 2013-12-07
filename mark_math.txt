@@ -1,0 +1,2404 @@
+
+DEL PEZZO SURFACES OF DEGREE 6 OVER AN
+ARBITRARY FIELD
+MARK BLUNK
+Abstract. We give a characterization of all del Pezzo surfaces of degree
+6 over an arbitrary ﬁeld F . A surface is determined by a pair of separable
+algebras. These algebras are used to compute the Quillen K-theory of the
+surface. As a consequence, we obtain an index reduction formula for the
+function ﬁeld of the surface.
+
+1. Introduction
+If X is an algebraic variety deﬁned over an arbitrary ﬁeld F , a common
+method (cf. the introduction of [13]) for learning various properties of X is
+to ﬁrst study X := X ×Spec F Spec(F ), the extension of scalars of X to a
+separable closure F of F , and then to study the action of the Galois group
+Gal(F /F ) on algebraic groups and other algebraic objects associated to X.
+This is particularly useful when dealing with a class of varieties that all become isomorphic over F , e.g. Severi-Brauer varieties or involution varieties.
+A Severi-Brauer variety is determined by a central simple F -algebra A, and
+an involution variety is determined by a central simple F -algebra A with an
+orthogonal involution of the ﬁrst kind (A, σ). In either case this algebraic data
+determines geometrical and topological information about the corresponding
+variety. In particular the Quillen K-groups of the variety are determined the
+algebra in the Severi-Brauer example, and the algebra with involution in the
+involution variety example. This was proved for Severi-Brauer varieties and
+involution varieties in [8] and [11], respectively. Panin proved in [7] a more
+general theorem computing the K-theory of projective homogeneous varieties,
+which contains both examples as special cases. In all of these examples, as in
+this paper, the action of algebraic groups plays a signiﬁcant role. An immediate consequence of this computation of the K-theory is an index reduction
+formula, which determines how extending scalars of a division F -algebra to
+the function ﬁeld of the variety reduces the index of the algebra. In this paper
+we will study del Pezzo surfaces of degree 6 over F , obtaining similar results.
+A del Pezzo surface S is a smooth projective surface over a ﬁeld F such
+−1
+that the anti-canonical bundle ωS is ample. The degree (the self-intersection
+number of ωS ) of any such surface can be any integer between 1 and 9. Such
+varieties were discussed in [1], [2], and [12]. As mentioned in some of these
+references, a del Pezzo surface of degree 6 is a toric variety for a particular two
+dimensional torus, which we will describe below. We explore this toric structure in Section 2. The result is Theorem 2.4, a classiﬁcation of all such surfaces
+1
+
+up to isomorphism preserving the action of the torus. Section 3 contains the
+main result of the paper, Theorem 3.5, where it is proved that a del Pezzo
+surface of degree 6 is determined by a pair B and Q of separable F -algebras,
+with centers K and L ´tale quadratic and cubic over F respectively, and both
+e
+containing K ⊗F L as a subalgebra. Moreover, corK/F (B) and corL/F (Q) must
+be split. As an immediate corollary of Theorems 2.4 and 3.5, we give a necessary and suﬃcient condition in terms of B and Q for determining when the
+corresponding surface will have a rational point.
+In Section 4, we relate the algebras B and Q to the endomorphism rings of
+locally free sheaves on the associated del Pezzo surface S. These sheaves are
+used in Theorem 4.2 to relate the Quillen K-theory of S to that of B and Q,
+by showing that the algebra A = F × B × Q is isomorphic to S in a certain
+K-motivic category C, constructed in [7]. This implies that for all n,
+Kn (S) ∼ Kn (A) = Kn (F ) ⊕ Kn (B) ⊕ Kn (Q).
+=
+As a corollary we obtain an index reduction formula for the function ﬁeld of
+S.
+I would like to thank my advisor Alexander Merkurjev, who posed this
+question to me, and answered several of my questions which developed along
+the way.
+We use the following notations and conventions:
+An F -variety is a separated scheme of ﬁnite type over Spec(F ).
+F will denote a separable closure of F .
+An F -algebra A is separable if A ⊗F L is semisimple for every ﬁeld extension
+L of F . Such an algebra is Azumaya over its center, which is an ´tale extension
+e
+of F .
+Γ will denote the group Gal(F /F ).
+For any F -variety X and any ﬁeld extension E of F , we will denote X ×Spec F
+Spec(E) (resp. X ×Spec F Spec(F )) by XE (resp. X).
+For any separable F -algebra A and any ´tale extension E of F , we will
+e
+denote A ⊗F E (resp. A ⊗F F ) by AE (resp. A).
+If D is a Cartier divisor on a variety X, L(D) will denote the corresponding
+invertible sheaf on X.
+For any variety X and any separable algebra A, P(X; A) will denote the
+exact category of left A ⊗F OX -modules which are locally free OX -modules.
+We will denote P(X; F ) (resp. P(Spec F ; A)) by P(X) (resp. P(A)).
+For any integer n, Kn (X; A) will denote the Quillen group Kn (P(X; A)).
+As above, we will denote Kn (X; F ) by Kn (X) and Kn (Spec F ; A) by Kn (A).
+For any algebraic torus T , T will denote the Γ-module of characters HomF (T , Gm,F ).
+2. Toric Varieties
+We ﬁrst recall from [4], [5], and [12] some basic properties of the variety
+S, the blow up of P2 at the 3 non-collinear points [1 : 0 : 0], [0 : 1 : 0], and
+[0 : 0 : 1]. The variety S can be realized as a closed subvariety of P2 ×P2 , deﬁned by the equations x0 y0 = x1 y1 = x2 y2 . The projection onto the ﬁrst factor of P2
+is the blow down of the three lines m0 = {x1 = x2 = 0}, m1 = {x0 = x2 = 0},
+and m2 = {x0 = x1 = 0}. Similarly, the projection onto the second factor of
+P2 is the blow down of the three lines l0 = {y1 = y2 = 0}, l1 = {y0 = y2 = 0},
+and l2 = {y0 = y1 = 0}.
+Proposition 2.1. Let S be the blow up of P2 at the three points [1 : 0 : 0],
+[0 : 1 : 0], and [0 : 0 : 1].
+i. The variety S is a del Pezzo surface of degree 6 over F , and if F is separably closed, any del Pezzo surface S of degree 6 over F is isomorphic
+to S.
+ii. The group CH1 (S) is generated by the lines l0 , l1 , l2 , m0 , m1 , and m2 .
+iii. The intersection pairing on CH1 (S) is determined by the following re2
+lations: li = −1, m2 = −1, li mj = 1, and li mi = li lj = mi mj = 0, for
+i
+distinct i, j ∈ {0, 1, 2}.
+iv. The group CH2 (S) is cyclic, generated by the class of any rational point.
+As mentioned in [1], there is an action of the torus T = G3 /Gm on P2 ,
+m
+described by:
+(t0 , t1 , t2 ) · [x0 , x1 , x2 ; y0 , y1, y2 ] = [t0 x0 , t1 x1 , t2 x2 ; t−1 y0 , t−1 y1 , t−1 y2 ].
+
+Here Gm embeds into G3 diagonally. This action sends S to itself, and is
+m
+faithful and transitive on the open subset U of S, the complement of the
+subvariety deﬁned by the equation x0 x1 x2 y0 y1 y2 = 0. This closed subvariety
+has 6 irreducible components, the lines l0 , l1 , l2 , m0 , m1 , and m2 , which by the
+proposition are arranged in a hexagon. Thus S is a T -toric variety, with fan
+dual to the hexagon of lines. There is also an action of the symmetric groups S2
+and S3 on S. The nontrivial element of S2 acts on P2 ×P2 by interchanging the
+xi and yi , and the S3 action on P2 × P2 arises from the diagonal action of S3 on
+the coordinates x0 , x1 , x2 and y0 , y1 , y2 . The S2 and S3 actions commute with
+each other, and both groups send S ⊂ P2 × P2 to itself. Therefore they induce
+an action of S2 × S3 on S, preserving the set of lines l0 , l1 , l2 , m0 , m1 , and
+m2 , and thus inducing an isomorphism from S2 × S3 onto the automorphism
+group of the hexagon of lines. The torus T is the connected component of the
+identity of the algebraic group AutF (S) of automorphisms of S, and S2 × S3
+is the group of connected components. The action of S2 × S3 on S deﬁne a
+section S2 × S3 → AutF (S), so we have the following split exact sequence of
+algebraic groups:
+1 → T → AutF (S) → S2 × S3 → 1.
+
+y0 = 0
+x1 = 0
+
+x2 = 0
+y2 = 0
+
+y1 = 0
+
+x0 = 0
+
+We have another way to realize S as a closed subvariety of a product of
+projective spaces. Deﬁne fi : S :→ P1 for i = 0, 1, 2 by
+f0 ([x0 : x1 : x2 ; y0 : y1 : y2 ]) = [x1 : x2 ] or [y2 : y1 ]
+f1 ([x0 : x1 : x2 ; y0 : y1 : y2 ]) = [x2 : x0 ] or [y0 : y2 ]
+f2 ([x0 : x1 : x2 ; y0 : y1 : y2 ]) = [x0 : x1 ] or [y1 : y0 ].
+
+Each fi is well deﬁned, as the two deﬁnitions agree on the overlap, and thus
+is a morphism of varieties. These morphisms deﬁne a morphism f : S →
+P1 × P1 × P1 . If we denote the bi-homogeneous coordinates of P1 × P1 × P1 by
+X0 , X1 , Y0 , Y1 , Z0 , and Z1 , it can be shown that f maps S isomorphically onto
+the hypersurface of P1 × P1 × P1 deﬁned by the equation X0 Y0 Z0 = X1 Y1 Z1 .
+
+The morphism f sends T to the torus
+
+Ker(G2 /Gm × G2 /Gm × G2 /Gm − G2 /Gm ),
+where m((t0 , t1 ), (t′0 , t′1 ), (t′′ , t′′ )) = (t0 t′0 t′′ , t1 t′1 t′′ ).
+Now let S be a del Pezzo surface of degree 6 over an arbitrary ﬁeld F . Then
+S is a del Pezzo surface of degree 6 over F , and thus by Proposition 2.1 is
+isomorphic over F to S. So S is an F -form of S. As the six lines of the
+hexagon form a full set of exceptional curves in S, the action of Γ on S is
+globally stable on the set of lines of the hexagon. Therefore, there is an open
+subvariety U whose complement Z is isomorphic over F to the hexagon of
+lines. The action of Γ on Z permutes its irreducible components, inducing an
+action of Γ on the hexagon.
+Let T denote the connected component of the identity of AutF (S). The
+group of connected components G of AutF (S) is an ´tale group scheme: it is the
+e
+group scheme determined (as in Proposition 20.16 of [3]) by the automorphism
+group of the hexagon of lines, with continuous Γ-action on this ﬁnite group
+as in the previous paragraph. So T is a torus, S is a T -toric variety, with an
+open set U which is a T -torsor, and Γ-action on the fan determined by the
+´tale group scheme G.
+e
+This Γ-action on the hexagon determines a homomorphism γ : Γ → S2 × S3 .
+Projecting onto either factor yields cocycles with values in S2 and S3 , and
+thus γ determines a pair (K, L), where K and L are ´tale quadratic and cubic
+e
+extensions of F , respectively. Note that while the fan, dual to the hexagon of
+lines, is the same for all del Pezzo surfaces of degree 6 over F , the possible
+Γ-actions on the fan are in a one-to-one correspondence with pairs (K, L).
+For a ﬁxed cocycle γ (i.e. a ﬁxed pair (K, L)), we will classify all del Pezzo
+surfaces S of degree 6 where the Γ-action on Z ⊂ S is determined by γ.
+We have from [12] the following short exact sequence of Γ-modules:
+0 → T → Z[KL/F ] → Pic(S) → 0.
+Here KL denotes the algebra K ⊗F L, and Z[KL/F ] is the lattice of the six
+lines of Z. The homomorphism Z[KL/F ] → Pic(S) takes a line to the corresponding Cartier divisor on S. As described in [1], this short exact sequence
+can be extended into the exact sequence
+(1)
+
+0 → T → Z[KL/F ] → Z[K/F ] ⊕ Z[L/F ] → Z → 0.
+
+Here Z[L/F ] is the lattice of pairs of opposite lines, and Z[K/F ] is the lattice
+of triangles, where each triangle is a triple of skew lines. The homomorphism
+Z[KL/F ] → Z[L/F ] sends each line to the pair containing it, and the homomorphism Z[KL/F ] → Z[K/F ] sends each line to the triangle containing
+it. The homomorphism Z[K/F ] ⊕ Z[L/F ] → Z is the diﬀerence of the augmentation maps. This sequence induces the following short exact sequence of
+Γ-modules:
+(2)
+
+where Z embeds into Z[K/F ], Z[L/F ], and Z[KL/F ] diagonally.
+(1)
+In analogy with RK/F (Gm ) := Ker(NK/F : RK/F (Gm ) → Gm ), we deﬁne the
+following algebraic F -groups:
+GL := Ker(NKL/L : RKL/F (Gm ) → RL/F (Gm ))
+GK := Ker(NKL/K : RKL/F (Gm ) → RK/F (Gm ))
+These groups are F -tori, dual to the Γ-modules Z[KL/F ]/Z[L/F ] and Z[KL/F ]/Z[K/F ],
+where Z[K/F ] and Z[L/F ] are diagonally embedded in Z[KL/F ]. The embeddings of RK/F (Gm ) and RL/F (Gm ) into RKL/F (Gm ) induce embeddings
+RK/F (Gm ) → GL and RL/F (Gm ) → GK . The description of T ⊂ S ⊂ P2 × P2
+above descends to the following exact sequence:
+
+1 → RK/F (Gm ) → GL → T → 1.
+
+Similarly, the description of f (T ) ⊂ P1 × P1 × P1 above descends to
+1 → RL/F (Gm ) → GK → T → 1.
+We will use these sequences in Section 4.
+Finally, from (1) and (2), we have corresponding sequences of F -tori:
+
+1 → Gm → RK/F (Gm ) × RL/F (Gm ) → RKL/F (Gm ) → T → 1,
+and
+φ
+
+1 → RK/F (Gm ) × RL/F (Gm ) − RKL/F (Gm ) → T → 1.
+→
+Recall that for E = K, L, and KL,
+
+H 1 (F, RE/F (Gm )) =F × /NE/F (E × )
+
+H 2 (F, RE/F (Gm )) = Ker(corE/F : Br(E) → Br(F )).
+Moreover, as NKL/F (KL)× is a subgroup of NK/F (K× ) and NL/F (L× ), it
+follows that the restriction of the homomorphism of H 1 groups induced by φ
+to either factor is just factoring out the corresponding subgroup of the quotient,
+and thus φ will be surjective. Therefore, by the induced long exact sequence
+in cohomology, we obtain the following exact sequence:
+1 → H 1 (F, T ) → Ker(corK/F ) × Ker(corL/F ) → Ker(corKL/F ).
+where the last homomorphism sends a pair (x, y) to resKL/K (x) − resKL/L(y) ∈
+Br(KL).
+Let C1 be the set of K-algebra isomorphism classes of Azumaya K-algebras
+B of rank 9 such that BL = B ⊗K KL and corK/F (B) are split, C2 the set of
+L-algebra isomorphism classes of Azumaya L-algebras Q of rank 4 such that
+QK = Q ⊗L KL and corL/F (Q) are split, and set C = C1 × C2 . Then C is a
+pointed set with distinguished element (M3 (K), M2 (L)), and the map ψ : C →
+Ker(corK/F ) × Ker(corL/F ) sending a pair (B, Q) to ([B], [Q]) is a morphism
+of pointed sets. Moreover, resKL/K ([B]) = [B ⊗K KL] and resKL/L ([Q]) =
+[Q ⊗L KL] are trivial, so it follows that ψ maps into H 1 (F, T ).
+
+Theorem 2.2. ψ : C → H 1 (F, T ) is an isomorphism of pointed sets.
+Proof. If ψ(B, Q) = ψ(B ′ , Q′ ), then [B] = [B ′ ] ∈ Ker(corK/F ) ⊂ Br(K). Then
+B and B ′ are similar Azumaya K-algebras of the same rank, and thus must
+be isomorphic as K-algebras. Similarly, Q and Q′ are isomorphic, so that ψ is
+injective.
+Now let (x, y) ∈ H 1 (F, T ), so that (x, y) ∈ Ker(corK/F ) × Ker(corL/F ), and
+resKL/K (x) = resKL/L (y). This implies that
+3x = corKL/K (resKL/K (x))
+= corKL/K (resKL/L(y)) = resK/F (corL/F (y)) = 0.
+Similarly, 2y = 0. Thus resKL/K (x) = resKL/L(y) has order divisible by 2 and
+3, and therefore is trivial. If L is not a ﬁeld, then L = F × E, where E is an
+´tale quadratic extension of F . Then resKL/K (x) = (x, resE⊗F K/K (x)), and so
+e
+resKL/K (x) = 0 implies x = 0. If L is a ﬁeld, then x is split by a ﬁeld extension
+of degree 3 (If K = F × F , and x = (x1 , x2 ) ∈ Br(K) = Br(F ) × Br(F ) is split
+by KL if and only if x1 and x2 are split by L). Thus for all possible K and
+L, there is an Azumaya K-algebra B of rank 9 that represents x in Br(K).
+Since resKL/K (x) and corK/F (x) are trivial, B ⊗K KL and corK/F (B) are split.
+Similarly, there is an Azumaya L-algebra Q of rank 4 which represents y such
+that Q⊗L KL and corL/F (Q) are split. Then (B, Q) ∈ A, and φ(B, Q) = (x, y),
+so ψ is surjective.
+Remark 2.3. As KL is an ´tale algebra of degree 3 over K, if KL splits
+e
+B, then KL can be embedded as a subalgebra of B. Similarly, KL can be
+embedded as a subalgebra of Q. If (B, Q) = (B ′ , Q′ ) in C = H 1 (F, T ), then any
+K-isomorphism from B to B ′ sends KL ⊂ B to a subalgebra of B ′ isomorphic
+to KL. Moreover, if we choose a ﬁxed embedding of KL into both B and B ′ ,
+by applying Skolem-Noether to B ′ we can ﬁnd an isomorphism from B to B ′
+which restricts to the identity on KL. Similarly, we may assume that Q to Q′
+are isomorphic via an isomorphism which is the identity on KL.
+It follows that if K and L are ´tale quadratic and cubic extensions of F
+e
+respectively, and T is the two dimensional torus induced from K and L as in
+the exact sequence (4), then elements of H 1 (F, T ) are determined by triples
+(B, Q, KL), where B is an Azumaya K-algebra of rank 9 such that corK/F (B)
+is split, Q is an Azumaya algebra over L of rank 4 such that corL/F (Q) is split,
+and we have a ﬁxed embedding of KL as a subalgebra into both B and Q.
+Two triples (B, Q, KL) and (B ′ , Q′ , KL) will determine the same element of
+H 1 (F, T ) if there are KL-algebra isomorphisms from B to B ′ and Q to Q′ .
+If S is a del Pezzo surface of degree 6, and if T is the connected component
+of the identity of AutF (S), S is a T -toric variety, with Γ-action on the fan
+induced by the Γ-action γ on the connected components of Z, the hexagon
+of lines. The T -torsors U ⊂ S is determined by an element of the pointed
+set H 1 (F, T ). Two surfaces S and S ′ will be isomorphic as toric varieties
+if and only if T and T ′ are isomorphic as algebraic groups, and there is an
+
+isomorphism from S to S ′ which preserves the action of T ∼ T ′ on S and
+
+S ′ , thus inducing isomorphisms Γ-actions on the fan and isomorphisms of the
+T -torsors determining S and S ′ . Thus we have proved the following:
+Theorem 2.4. Let S be a del Pezzo surface of degree 6, and T be the connected component of the identity of the group AutF (S). Then S is a T -toric
+variety with Γ-invariant fan determined by a pair (K, L) and the T -torsor U
+determined by a triple (B, Q, KL). Two triples (B, Q, KL) and (B ′ , Q′ , K ′ L′ )
+will describe isomorphic toric varieties if and only if K and L are isomorphic
+to K ′ and L′ as F -algebras, (so that T ∼ T ′ ), and there exist KL-algebra
+
+isomorphisms from B to B ′ and Q to Q′ .
+3. The Main Theorem
+We would now like to classify these surfaces up to isomorphism as abstract
+varieties. This is less restrictive than isomorphism as toric varieties. We will
+see that a del Pezzo surface is still determined by a triple (B, Q, KL), but now
+we will allow F -algebra isomorphisms on B and Q, i.e. algebra isomorphisms
+which may not ﬁx KL.
+Let S be a del Pezzo surface of degree 6 over F . Then S is a T -toric variety,
+where T is the connected component of AutF (S), with the Γ-action on the
+fan determining a pair (K, L), and the T -torsor U ⊂ S determining a pair
+(B, Q, KL). Let G be the group of connected components of AutF (S). As we
+have shown above, G is an ´tale group scheme, determined by the action of Γ on
+e
+the hexagon of lines. In particular, G(F ) = AutF (KL) ∼ AutF (K)×AutF (L).
+
+Consider the following action of G(F ) on H 1 (F, T ): if (g, h) ∈ AutL (KL) ×
+AutK (KL) and (B, Q, KL) ∈ H 1 (F, T ) then g nontrivial sends B to B op , and
+sends the embedding i : KL → B to ig : KL → B op , where ig (z) = i(g(z))op ∈
+B op . As KL is a cyclic extension of L, Q is a cyclic L-algebra, so there is an
+element l ∈ L× such that Q is generated by KL and an element y, subject to
+the relations y 2 = l and zy = yσ(z) for every z ∈ KL, where σ ∈ AutL (KL)
+is the nontrivial automorphism of KL over L. Such an algebra is denoted
+(KL/L, l). Let h act on Q = (KL/L, L) by h · (KL/L, l) = (KL/L, h(l)),
+h
+and send the embedding KL → Q to KL − KL → (KL, h(l)). As l ∈ L×
+→
+determines Q = (KL/L, l) up to multiplication by an element of the subgroup
+NKL/L (KL)× ⊂ L× , and as AutF (L) takes NKL/L (KL)× to itself, we see
+that this action is well deﬁned.
+The orbits of this group action can be described in terms of F -algebra isomorphisms on B and Q, as we will show below. We will use the following
+proposition several times: We will need the following proposition:
+Proposition 3.1 (Proposition 4.18 of [3]). Let (B, τ ) be a central simple F algebra of degree n with unitary involution, and let K be the center of B. For
+every F -subalgebra L of B which is ´tale of dimension n over F , there exists
+e
+a unitary involution of B ﬁxing L.
+
+
+Proposition 3.2. (B ′ , Q′ ) = g · (B, Q) for some g ∈ G(F ) if and only if there
+are F -automorphisms φB : B → B ′ and φQ : Q → Q′ such that φB |KL =
+φQ |KL = g.
+Proof. Assume that (B ′ , Q′ , KL) = g · (B, Q, KL) for some g ∈ G(F ). Any
+F -automorphism g of KL can be expressed as the composition of two automorphisms, one ﬁxing K and one ﬁxing L. So it suﬃces to consider the separate
+cases where K and L are ﬁxed by the automorphism.
+We ﬁrst consider the case where g ﬁxes K, so that B ′ = B. By SkolemNoether, there is a K-automorphism φB of B such that φB |KL = g. Now,
+Q = (KL/L, l), Q′ = (KL/L, g(l)) and as σ and g commute, g extends to an
+F -automorphism φQ from Q to Q′ , by sending KL to KL via g, and y to y ′.
+Then φB and φQ agree on KL.
+Now assume that g = σ is the non-trivial L-automorphism of KL, so that
+
+Q = Q and B ′ = B op . As in the previous paragraph, by Skolem-Noether there
+is an L-automorphism φQ of Q such that φQ |KL = g. Moreover, as corK/F (B) is
+split and L is an ´tale cubic extension of F , we know by Proposition 3.1 that B
+
+has a unitary involution τ which is the identity on L. The involution τ deﬁnes
+an F -isomorphism φB from B to B op , such that φB |KL = σ = g = φQ |KL.
+Conversely, assume that φB : B → B ′ and φQ : Q → Q′ are F -isomorphisms
+such that φB |KL = φQ |KL = g ∈ AutF (KL). As in the arguments above, we
+will ﬁrst consider the separate cases where g ﬁx K and L.
+If g ﬁxes L, then φQ is an isomorphism of L-algebras, so that (B ′ , Q, KL) =
+(B ′ , Q′ , KL) in H 1 (F, T ). If we restrict φB to the center of B, we get an F isomorphism of K. If φ|K is the identity (i.e. g is trivial), then B and B ′ are
+isomorphic as K-algebras. If φ|K is not the identity, then by pre-composing
+φ with the isomorphism from B op to B induced by any unitary involution τ
+ﬁxing L on B, we see that B op and B ′ are isomorphic as K-algebras. In either
+case, (B ′ , Q′ , KL) = (B ′ , Q, KL) = g · (B, Q, KL) in H 1 (F, T ).
+Now assume that g ﬁxes K, so that φB : B → B ′ is an isomorphism of Kalgebras, and then (B ′ , Q′ , KL) = (B, Q′ , KL) in H 1 (F, T ). If Q = (KL/L, l),
+and if l′ = φQ (l) = g(l), then Q is isomorphic over L to (KL/L, l′ ), and so
+(B ′ , Q′ , KL) = (B, Q′ , KL) = g · (B, Q) in H 1 (F, T ).
+Finally, assume that g does not ﬁx K or L. If σ is the nontrivial Lautomorphism of KL, σg does ﬁx K. Moreover, by post-composing φB with
+the F -isomorphism φB′ : B ′ → (B ′ )op induced by any unitary involution τ of B ′
+ﬁxing L (which exist by Proposition 3.1), we get isomorphisms φB′ ◦ φB : B →
+(B ′ )op and φQ : Q → Q′ such that (φB′ ◦ φB )|KL = φQ |KL = σg. Therefore by
+our argument in the previous paragraph, σ · (B ′ , Q′ , KL) = ((B ′ )op , Q′ , KL) =
+σg · (B, Q, KL) in H 1(F, T ). Acting on both sides of this equation by σ, we
+get (B ′ , Q′ , KL) = g · (B, Q, KL).
+The next theorem relates isomorphism classes of del Pezzo Surfaces of degree
+6 with G(F )-orbits of H 1 (F, T ). We will need the following standard result
+from Galois cohomology: (cf. Corollary (28.10) of [3] or Chapter I, Section
+5.5, Corollary 2 of [9].)
+
+Proposition 3.3. Let Γ be a proﬁnite group, A and B be Γ-groups with A a
+normal subgroup of B, and set C = B/A. If β ∈ H 1 (Γ, B), and b a cocycle
+representing β, then the elements of H 1 (Γ, B) with the same image as β in
+H 1 (Γ, C) corresponding bijectively with (Cb )Γ -orbits of the set H 1 (Γ, Ab ).
+Theorem 3.4. The isomorphism class of S corresponds to a G(F )-orbit of
+H 1 (F, T ).
+Proof. As mentioned in Section 2, we have the following split exact sequence
+of algebraic groups:
+
+1 → T → AutF (S) → S2 × S3 → 1,
+
+where T is the connected component of the identity of AutF (S), and S2 × S3
+is the group of connected components. This sequence induces the split exact
+sequence of pointed sets:
+1 → H 1 (F, T ) → H 1 (F, AutF (S)) → H 1 (F, S2 × S3 ) → 1.
+The elements of H 1 (F, AutF (S)) are in a one-to-one correspondence with the
+set of isomorphisms classes of F -forms of S, which by Proposition 2.1 are
+del Pezzo surfaces of degree 6. Let β ∈ Z 1 (F, AutF (S)) be a cocycle whose
+cohomology class is determined by the isomorphism class of S, and let γ be
+the image of β in Z 1 (F, S2 × S3 ). The cocycle γ is determined by the action
+of the Galois group Γ on Z ⊂ S, and induces a pair (K, L). The twist of T by
+γ is the torus T , determined by (K, L) as in the sequence (4), and the twist of
+S2 × S3 is the ´tale group scheme G. The result follows by Proposition 3.3.
+
+Note that as H 1 (F, AutF (S)) → H 1 (F, S2 × S3 ) is surjective, we see that
+all possible pairs (K, L) are realized by the action of Γ on Z, for Z contained
+in some del Pezzo surface S of degree 6. So let S1 and S2 be two del Pezzo
+surfaces of degree 6, and let (Bi , Qi , Ki Li ) be an element of the the Gi (F )-orbit
+of H 1 (F, Ti) determined by Si , for i = 1, 2. Then S1 and S2 induce isomorphic
+Γ-actions on the hexagon of lines (so that (K1 , L1 ) ∼ (K2 , L2 ), T1 ∼ T2 , and
+
+
+G1 ∼ G2 ; we denote these algebraic objects (K, L), T , and G, respectively).
+
+It follows from Proposition 3.2 that two pairs (B1 , Q1 , KL) and (B2 , Q2 , KL)
+are in the same G(F )-orbit of H 1 (F, T ) if and only if there are isomorphisms
+φB1 : B1 → B2 and φQ1 : Q1 → Q2 such that φB1 |KL = φQ1 |KL. We have
+proved the following theorem:
+Theorem 3.5. There are bijections, inverse to each other, between the following two sets:
+• The set of isomorphism classes of del Pezzo surfaces of degree 6.
+• The set of triples (B, Q, KL), modulo the relation: (B, Q, KL) ∼ (B ′ , Q′ , K ′ L′ )
+if there are F -algebra isomorphisms φB : B → B ′ and φQ : Q → Q′
+such that φB |KL = φQ |KL.
+For the rest of this paper, S(B, Q, KL) will denote the del Pezzo surface of
+degree 6 determined by the triple (B, Q, KL).
+
+Corollary 3.6. The surface S(B, Q, KL) contains a rational point if and only
+if B and Q are split.
+Proof. Since S(B, Q, KL) is a T -toric variety for a two dimensional torus T ,
+S has a rational point if and only if the corresponding T -torsor U is a trivial
+torsor (cf. Proposition 4 of [14]). By Theorem 2.4, this occurs precisely when
+B and Q are split.
+Remark 3.7. If S0 is a T -toric model (i.e. the T -torsor U ⊂ S0 is trivial), then
+the map H 1 (F, T ) → H 1 (F, AutF (S)) induced by T ֒→ AutF (S) takes a T torsor U to the surface determined by U and the Γ-action on the fan determined
+by the pair (K, L). Thus for any surface S, the elements of H 1 (F, T ) in the
+ﬁber of the isomorphism class of S determine the possible non-isomorphic T toric structures on S, where T is the connected component of the identity of
+the algebraic group AutF (S). In terms of the algebras B and Q, the map
+H 1 (F, T ) → H 1 (F, AutF (S)) forgets the KL-algebra structure of B and Q,
+preserving only the F -algebra structure and the embedding of KL into B and
+Q.
+
+The group AutF (K) always has order 2, but the group AutF (L) can have
+order 1, 2, 3, or 6. If AutF (L) has order less than 6, then the orbit of (B, Q, KL)
+in H 1 (F, T ) contains at most 6 elements. It AutF (L) has order 6, then L = F 3
+is not a ﬁeld, and thus B is necessarily split. If B is split, then the pair
+(B, Q, KL) ∈ H 1 (F, T ) is ﬁxed by the subgroup AutF (K) of G(F ), and so
+again the G(F )-orbit of (B, Q, KL) in H 1 (F, T ) has at most 6 elements. Thus
+for a del Pezzo surface S of degree 6, there at most 6 non-isomorphic T -toric
+structures on S.
+Remark 3.8. We would like to relate this characterization of del Pezzo surfaces of degree 6 by triples (B, Q, KL) with the characterization by triples
+(B, τ, L) found in [1]. A triple (B, τ, L) is an Azumaya K-algebra B of rank
+9, a unitary involution τ on B, and a cubic ´tale F -algebra L such that
+
+L ⊂ Sym(B, τ ). Two triples (B, τ, L) and (B , τ , L′ ) are isomorphic if there is
+an F -algebra isomorphism φ : B → B ′ such that τ ′ φ = φτ and φ(L) = L′ .
+So let (B, Q, KL) be a triple as in Theorem 3.5. Then B is an Azumaya
+K-algebra of rank 9, and is classiﬁed up to isomorphism as an F -algebra. As
+BL is split, so B contains KL, and hence L, as a subalgebra. Since corK/F (B)
+is split, we know that B has a unitary involution. Moreover, since L is an
+´tale cubic extension of F contained in B, there is some unitary involution
+
+τ such that L ⊂ Sym(B, τ ), by Proposition 3.1. So the B and L in our
+characterization match with the B and L described in [1]. The rest of the
+remark seeks to relate Q and the involution τ . That is, we want to classify all
+triples (B, τ, L) with B and L ﬁxed. This should correspond to ﬁxing K, L,
+and B, and trying to determine all possible Q.
+As K/F and KL/L are cyclic,
+Br(K/F ) ∼ F × / NK/F (K× )
+and
+Br(KL/L) ∼ L× / NKL/L (KL)× .
+
+The restriction homomorphism resL/F : Br(F ) → Br(L) sends the subgroup
+Br(K/F ) to Br(KL/L). As K and L have coprime degrees, resL/F |Br(K/F ) :
+Br(K/F ) → Br(KL/L) is injective, and the cyclic algebra Q corresponds to
+an element of Br(KL/L)/ resL/F (Br(K/F )), i.e. an element of
+L× / NKL/L (KL)×
+= L× / NKL/L (KL)×
+
+resL/F F × / NK/F (K× )
+F × NKL/L (KL)× / NKL/L (KL)×
+
+∼ L× /F × NKL/L (KL)× .
+
+If τ is a unitary involution on B which is the identity on L, and u ∈ L× ,
+then τu := Int(u) ◦ τ is also a unitary involution on B ﬁxing L. Moreover, τu is
+conjugate to τv if uv −1 ∈ F × NKL/L (KL)× . Thus, after a choice of a particular
+involution τ , we have a morphism of pointed sets from L× /F × NKL/L (KL)×
+to the set of conjugacy classes of unitary involutions of B which are the identity
+on L, sending u to τu . By Corollary 19.3 of [3], this map is a surjection. So we
+have a surjective map from L× /F × NKL/L (KL)× to the set of isomorphism
+classes of triples (B, τ, L).
+Theorem 3.5 should say that the ﬁbers of this surjection should be the orbit
+of the group AutF (L) in L× /F × NKL/L (KL)× , corresponding to the AutF (L)orbit of (B, Q). However, to make this statement correct, we need to choose
+a particular involution τ on B. It is not clear in general what this involution
+should be. The involution τ should be chosen so that the surface S(B, τ, L)
+should correspond to the pair (B, M2 (L)). In particular, if B = M3 (K) is split,
+the surface described by the triple (M3 (K), τ, L) should have a rational point,
+by Corollary 3.6. The next remark constructs the involution in this case.
+Remark 3.9. Given K and L, we will ﬁnd a triple (B, τ, L), (i.e. a central simple algebra of degree 3 over K with an involution τ such that L ⊂ Sym(B, τ ),)
+so that the corresponding del Pezzo surface S(B, τ, L) constructed in [1] has a
+rational point.
+As KL is a three dimensional vector space over K, B := EndK (KL) is a
+Azumaya K-algebra of rank 9. Left multiplication by an element of KL determines an embedding of KL into B. If σ is the nontrivial L-automorphism of
+KL, h(x, y) = TrKL/K (σ(x)y) deﬁnes a hermitian form on KL. This hermitian form on KL induces an involution of the second kind τ on B, such that
+L ⊂ Sym(B, τ ). So we have a triple (B, τ, L). Let S denote the corresponding
+del Pezzo surface of 6, constructed in [1].
+I claim that S contains a rational point. According to [1], it suﬃces to
+show that there is a right ideal I of B of reduced dimension 1 such that
+(I · τ (I)) ∩ Sym(B, τ ) ⊂ F ⊕ L⊥ , where L⊥ = {x ∈ Sym(B, τ )| Trd(lx) =
+0, for all l ∈ L}.
+
+Let W = spanK (1) ⊂ LK, so that W is a one dimensional K-subspace of
+KL. and then I = HomK (KL, W ) is a right ideal of B of reduced dimension
+1, generated by the linear map t = TrKL/K : KL → K ֒→ KL. We want to
+show that t ∈ Sym(B, τ ). First, note that for any x ∈ KL, TrKL/K (σ(x)) =
+σ(TrLK/L(x)). If x, y ∈ KL,
+h(x, t(y)) = TrKL/K (σ(x) TrKL/K (y))
+= TrKL/K (σ(x)) TrKL/K (y)
+= TrKL/K (σ(TrKL/K (x))y)
+= h(t(x), y).
+So t ∈ Sym(B, τ ), which implies that τ (I) is a left ideal of B, also generated
+by t. Thus, I · τ (I) = tBt.
+In order to prove I · τ (I) ∩ Sym(B, τ ) ⊂ F ⊕ L⊥ , it suﬃces to consider the
+case where L = F 3 is split. So we can choose a basis e1 , e2 , e3 of idempotents
+for KL over K. In this basis, τ is the standard adjoint involution, Sym(B, τ )
+is the set of hermitian matrices, and F ⊕ L⊥ is the set of hermitian matrices
+where the diagonal entries agree. Moreover, t is the matrix with ones in every
+entry, so t ∈ F ⊕ L⊥ . A direct calculation shows I · τ (I) = spanK (t), and hence
+(I · τ (I)) ∩ Sym(B, τ ) = spanF (t) ⊂ F ⊕ L⊥ .
+4. K0 of del Pezzo Surfaces
+Let S = S(B, Q, KL) be a del Pezzo surface of degree 6, a T -toric variety
+for a two dimensional torus T . Let Z ⊂ S be the closed variety such that Z
+is the union of six lines l0 , l1 , l2 , m0 , m1 , and m2 . Recall the exact sequence
+(2) from Section 2, where Z[KL/F ] is the lattice of connected components of
+Z ⊂ S, the lines li and mi , and the homomorphism Z[KL/F ] → Pic(S) sends
+each line to the corresponding invertible sheaf on S. From the exact sequence
+(1), we see that T is the subgroup of Z[KL/F ] generated by l0 −l1 −(m0 −m1 ),
+l0 − l2 − (m0 − m2 ), and l1 − l2 − (m1 − m2 ). Note that any one of these 3
+generators can be expressed as a linear combination of the other 2. So Pic(S)
+is generated by the invertible sheaves L(−li ), L(−mj ), and we have that the
+invertible sheaves L(−li − mj ) and L(−lj − mi ) are isomorphic for i, j = 0, 1, 2.
+There is another way to recover these generators and relations, which does
+not depend on the theory of toric varieties. Recall that there is a morphism
+p1 : S → P2 , obtained by blowing down the lines m0 , m1 , and m2 . If x0 , x1 , x2
+are the homogeneous coordinates of P2 and Di = {xi = 0} for i = 0, 1, 2, then
+D0 , D1 , and D2 are all linearly equivalent divisors on P2 , and thus their strict
+transforms m1 +l0 +m2 , m0 +l1 +m2 , and m0 +l2 +m1 are all linearly equivalent
+divisors on S. Therefore the corresponding invertible sheaves L(−m1 −l0 −m2 ),
+L(−m0 − l1 − m2 ), and L(−m0 − l2 − m1 ) on S are isomorphic. From this
+we can conclude that Pic(S) is generated by the invertible sheaves L(−m0 ),
+L(−m1 ), L(−m2 ), L(−m1 −l0 −m2 ), L(−m0 −l1 −m2 ), and L(−m0 −l2 −m1 ),
+and we have that L(−li − mj − lk ) and L(−lj − mi − lk ) are isomorphic for any
+
+
+i, j = 0, 1, 2. This presentation is equivalent to that in the previous paragraph.
+Similarly, this presentation can be obtained by considering the morphism p2 :
+S → P2 obtained by blowing down the lines l0 l1 , and l2 .
+We deﬁne the following locally free sheaves on S:
+I1 = L(−m1 − l0 − m2 ) ⊕ L(−m0 − l1 − m2 ) ⊕ L(−m0 − l2 − m1 )
+I2 = L(−l1 − m0 − l2 ) ⊕ L(−l0 − m1 − l2 ) ⊕ L(−l0 − m2 − l1 )
+J1 = L(−l0 − m1 ) ⊕ L(−l1 − m0 )
+J2 = L(−l0 − m2 ) ⊕ L(−l2 − m0 )
+J3 = L(−l1 − m2 ) ⊕ L(−l2 − m1 ).
+The Γ-action on the hexagon of lines induces an action on the locally free
+sheaves I1 ⊕ I2 and J1 ⊕ J2 ⊕ J3, compatible with the action on S. Therefore
+I1 ⊕ I2 and J1 ⊕ J2 ⊕ J3 descend to sheaves I and J on S.
+We will consider the following endomorphism rings: B ′ = EndOS (I)op , and
+′
+Q = EndOS (I)op . As S is projective, EndOS (OS )op = F , and since I and J
+are OS -modules, it follows that B ′ and Q′ are F -algebras. For i, j, and k not
+equal, EndOS (L(−mi − lj − mk )) = EndOS (L(−li − mj − lk )) = F , so we see
+6
+
+that F embeds diagonally into EndOS (I1 ⊕ I2 ). Moreover, since L(−li − mj )
+and L(−lj − mi ) are isomorphic for any i, j, I1 ⊕ I2 = (L(−m1 − l0 − m2 ) ⊕
+L(−l1 − m0 − l2 )) ⊗F V , where V is an F -vector space of dimension 3. An
+element of HomOS (L(−m1 − l0 − m2 ), L(−l1 − m0 − l2 )) is given by a global
+section of L(m2 − l2 ). Any non-zero global section of L(m2 − l2 ) would give a
+function deﬁned on a neighborhood of l2 ⊂ S with vanishing set l2 . Blowing
+down the lines li , this function would then correspond to a function deﬁned
+on an open subset of P2 with vanishing set a point, which is impossible, since
+a point is a codimension 2 subvariety of P2 . Thus L(m2 − l2 ) has no nonzero
+global sections. Similarly HomOS (L(−l1 −m0 −l2 ), L(−m1 −l0 −m2 )) = 0, and
+so EndOS (I1 ⊕I2 ) = EndOS (L(−mi −lj −mk )×L(−li −mj −lk ))⊗F EndF (V ) =
+
+EndF 2 (VF 2 ). So the center of EndOS (I1 ⊕ I2 ) is a copy of F , contained in F .
+
+
+
+
+This chain F ⊂ F ⊂ EndOS (I1 ⊕ I2 ) descends to K ⊂ KL ⊂ EndOS (I),
+with K the center of EndOS (I).
+Now let E be any separable ﬁeld extension of F over which the lines li , mj are
+deﬁned. This is equivalent to E splitting both K and L. the above arguments
+show that EndOS (I) ⊗F E ≈ M3 (E 2 ), where E 2 ≈ K ⊗F E. Therefore, we
+conclude that B ′ is an Azumaya K-algebra of rank 9 which contains KL as
+a subalgebra. A similar argument shows that Q′ is an Azumaya L-algebra of
+rank 4 which also contains a copy of KL.
+Theorem 4.1. B ′ = EndOS (I)op and B are isomorphic as K-algebras. Similarly, Q′ = EndOS (J )op and Q are isomorphic as L-algebras.
+Proof. Let S be as in Proposition 2.1, and let I and J be the sheaves associated
+to S as above. Twisting I and J by the Γ-action corresponding to the pair
+
+
+(K, L), we get sheaves I0 and J0 associated to the T -toric model S0 . Let
+
+
+B0 = EndOS (I0 )op and Q′0 = EndOS (J0)op . The embeddings of KL into B0
+
+and Q0 described above induce the following commutative diagrams (cf. (3)):
+
+RK/F (Gm )
+
+
+The ﬁrst diagram induces the following commutative diagram of cohomology
+sets:
+
+The left vertical arrow sends the triple (B, Q, KL) to the endomorphism ring
+B = End(I)op , where I is the sheaf associated to the surface S(B, Q, KL)
+constructed above. The upper horizontal arrow sends the triple (B, Q, KL) to
+the class of [B] ∈ Br(K), which lands in the subgroup of elements of trivial
+norm. The right vertical map is the inclusion homomorphism. The lower
+horizontal arrow sends a K-algebra to its corresponding element in Br(K).
+By the commutativity of the diagram, we see that [B] = [B ′ ] in Br(K). But
+these algebras have the same rank, so they must be isomorphic as K-algebras.
+A similar argument shows that Q′ = EndOS (J )op and Q are isomorphic as
+L-algebras.
+
+
+Let A be the separable F -algebra F ×B ×Q, so that P(A) = P(F )×P(B)×
+P(Q). Deﬁne the exact functors uF from P(F ) to P(S) by M1 → OS ⊗F M1 ,
+uB from P(B) to P(S) by M2 → I ⊗B M2 , and uQ from P(Q) to P(S) by
+M3 → J ⊗Q M3 . If we set P = OS ⊕I ⊕J , then the respective right actions of
+F , B, and Q on OS , I, and J combine to give a right action of A = F × B × Q
+on P. Therefore, we can deﬁne an exact functor from P(A) to P(S) by sending
+M to P ⊗A M. This exact functor induces a homomorphism:
+φ : K0 (A) → K0 (S).
+More generally, if Y is any F -variety, then we have an exact functor from
+P(Y ; A) to P(Y × S), sending M to p∗ (P) ⊗OY ×S ⊗F A p∗ (M), where p1 : Y ×
+
+homomorphism φY : K0 (Y ; A) → K0 (Y × S). Furthermore, if E is any ﬁeld
+extension of F , then φ naturally extends to a homomorphism φE : K0 (AE ) →
+K0 (SE ).
+Theorem 4.2. φ : K0 (A) → K0 (S) is an isomorphism.
+We will prove this in several stages. Let us ﬁrst consider the case where
+F is separably closed. By Proposition 2.1, S is isomorphic to the blow up
+of the projective plane at the 3 non-collinear points [1 : 0 : 0], [0 : 1 : 0],
+and [0 : 0 : 1]. Recall that we have the ﬁltration 0 = K0 (S)(3) ⊂ K0 (S)(2) ⊂
+K0 (S)(1) ⊂ K0 (S)(0) = K0 (S) by codimension of support, and homomorphisms
+CH i (S) → K0 (S)(i/i+1) , which send the class of a subvariety V to the equivalence class [OV ]. These homomorphisms are isomorphisms for i = 0, 1, 2. So by
+Proposition 2.1, if P is a rational point of S, K0 (S) is generated by [OS ], [Ol0 ],
+[Ol1 ], [Ol2 ], [Om0 ], [Om1 ], [Om2 ], and [OP ]. Moreover, as CH0 (S), CH1 (S), and
+CH2 (S) are free abelian groups with ranks 1, 4, and 1, respectively, K0 (S) is
+free abelian with rank 6. Since F is separably closed, K, L, B, and Q are
+split, and thus K0 (A) is also free abelian of rank 6. Therefore φ will be an
+isomorphism provided it is surjective. So it suﬃces to show that [OS ], [Ol0 ],
+[Ol1 ], [Ol2 ], [Om0 ], [Om1 ], [Om2 ], and [OP ] are in the image of φ.
+Clearly, [OS ] = [OS ⊗F F ] is in the image of φ. As F is separably closed,
+I = (L(−m1 −l0 −m2 )⊕L(−l1 −m0 −l2 ))⊗F V , where V is an F -vector space of
+dimension 3, K = F ×F ∼ EndOS (L(−m1 −l0 −m2 ))×EndOS (L(−l1 −m0 −l2 )),
+
+and EndOS (I)op ∼ EndF 2 (VF 2 ).
+
+Now HomF 2 (VF 2 , F × 0) is a right EndOS (I)-module, and thus a left Amodule, where the F and Q component of A = F × B × Q act trivially.
+Therefore,
+φ HomF 2 (VF 2 , F × 0) = I ⊗B HomF 2 (VF 2 , F × 0)
+
+
+L(−m1 − l0 − m2 ) ⊕ L(−l1 − m0 − l2 )
+
+⊗F 2 (F × 0)
+[L(−m1 − l0 − m2 )],
+where we use Morita equivalence in the second line. A mirror argument shows
+that φ HomF 2 (VF 2 , 0 × F ) = [L(−l1 − m0 − l2 )], and a similar argument
+applied to J and Q shows that [L(−l0 −m1 )], [L(−l0 −m2 )], and [L(−l1 −m2 )]
+are in the image of φ.
+Now let i, j ∈ {0, 1, 2} and not equal. By Proposition 2.1, the lines li and
+mj have intersection a rational point P of S, with multiplicity 1, the lines mi
+and mj are skew, and the lines li and lj are skew. Thus we have the following
+resolutions of OP and OS :
+
+
+⊗L(mj )A
+⊗L(li )
+(⊗L(li ),−⊗L(mj ))
+
+So 0 = [OS ] − [L(−mi )] − [L(−mj )] + [L(−mi − mj )] in K0 (S). If we take
+k ∈ {0, 1, 2} not equal to i or j and multiply this equation by [L(−lk )], we see
+that
+0 = [L(−lk )] − [L(−lk − mi )] − [L(−lk − mj )] + [L(−mi − lk − mj )].
+Therefore,
+[Olk ] = [OS ] − [L(−lk )]
+= [OS ] − [L(−lk − mi )] − [L(−lk − mj )] + [L(−mi − lj − mk )]
+is in the image of φ. The same argument with l and m interchanged shows that
+[Omk ] is in the image of φ for k ∈ {0, 1, 2}. Finally, [OP ] = [OS ] − [L(−l0 )] −
+[L(−m1 )] + [L(−l0 − m1 )] is in the image of φ, and thus φ is surjective when
+F is separably closed.
+Proposition 4.3. φ : K0 (A) → K0 (S) is an isomorphism if B and Q are
+split.
+Proof. By the preceding argument, φF : K0 (A) → K0 (S) is an isomorphism.
+Moreover, φF commutes with the action of Γ on both K0 (A) and K0 (S), and
+thus it descends to an isomorphism on the Γ-invariant subgroups. Therefore,
+we have the following commutative diagram:
+K0 (A)
+
+As φF and the left vertical map K0 (A) → K0 (A)Γ are isomorphisms, φ must be
+injective. Moreover, if the right vertical map is injective, then φ is surjective,
+
+and hence an isomorphism. So it suﬃces to show that K0 (S) → K0 (S)Γ is
+injective.
+To see this, note that the rank and wedge homomorphisms rank : K0 (S) → Z
+and ∧ : K0 (S)(1) → Pic(S) commute with the action of Γ. Thus we have the
+following short exact sequences of Γ-modules:
+∧
+
+0 → K0 (S)(2) → K0 (S)(1) − Pic(S) → 0
+→
+and
+rank
+
+0 → K0 (S)(1) → K0 (S) − → Z → 0.
+−
+These sequences of Γ-modules induce the following long exact sequences:
+∧
+
+0 → (K0 (S)(2) )Γ → (K0 (S)(1) )Γ − Pic(S)Γ → H 1 (F, K0 (S)(2) )
+→
+and
+rank
+
+
+0 → (K0 (S)(1) )Γ → (K0 (S))Γ − → Z → H 1 (F, K0(S)(1) ).
+The map K0 (S) → K0 (S)Γ induces the following commutative diagrams:
+
+As B and Q are split, S has a rational point by Corollary 3.6. Thus the
+homomorphism K0 (S)2 → (K0 (S)(2) )Γ is a surjective homomorphism of free
+abelian groups of rank 1, and therefore an isomorphism. Moreover, the homomorphism Pic(S) → Pic(S)Γ is injective. Thus, by applying the Snake Lemma
+to the ﬁrst diagram and then to the second, we see that K0 (S) → (K0 (S))Γ is
+injective.
+Remark 4.4. If P and P ′ are rational points of S, they deﬁne equal classes in
+CH2 (S) by Proposition 2.1, and hence [OP ] = [OP ′ ] in K0 (S)(2) . So K0 (S)(2)
+is generated by the Γ-invariant element [OP ], and thus is a trivial Γ-module.
+Similarly, our arguments above show that the set {[Ol0 ⊕ Om1 ], [Ol0 ⊕ Om2 ],
+[Ol1 ⊕ Om2 ], [Om1 ⊕ Ol0 ⊕ Om2 ], [Ol1 ⊕ Om0 ⊕ Ol2 ]} is a Γ-invariant basis of K0 (S)(1) , and thus K0 (S)(1) is a permutation module. It follows that
+H 1 (F, K0 (S)(2) ) = H 1 (F, K0 (S)(1) ) = 0.
+We will need the following proposition (cf. Proposition 6.1 of [6]).
+
+
+Proposition 4.5. If Y is a variety such that the homomorphism φF (y) :
+K0 (AF (y) ) → K0 (SF (y) ) is an isomorphism for every y ∈ Y , then φY : K0 (Y ; A) →
+K0 (S × Y ) is surjective.
+Proof. We do this by double induction on the dimension of Y and the number
+of irreducible components of Y .
+If Y has a proper irreducible component Y ′ , with complement U, we have
+the following localization exact sequence (cf. [8]):
+K0 (Y ′ ; A)
+
+By our inductive assumption, the vertical maps on the right and on the left are
+surjective. This implies that the middle vertical map is surjective as well. So
+we may assume that Y is irreducible. If Y is not reduced, then we the natural
+Yred → Y induces the commutative diagram
+
+
+where the horizontal arrows are isomorphisms. Thus we may also assume that
+Y is reduced.
+Now let x ∈ K0 (Y × S). By assumption, φF (Y ) : K0 (AF (Y ) ) → K0 (SF (Y ) ) is
+an isomorphism, and hence there exists an open set U in Y such the image of
+x in K0 (U × S) is in the image of φU . We again consider the localization exact
+sequence:
+
+where Z is the complement of U in Y . By assumption, Z has a strictly smaller
+dimension than Y , and so by our inductive hypothesis, φZ is surjective. A
+standard diagram chase shows that x ∈ Im(φY ).
+Proof of Theorem 4.2. Let SB(B) be the Severi-Brauer K-variety associated
+to B, SB(Q) be the Severi-Brauer L-variety associated to Q, and Y = RK/F (SB(B))×
+RL/F (SB(Q)) be the product of the restriction of scalars of both varieties.
+Then for any ﬁeld extension E of F , Y (E) is nonempty if and only if SB(B)(K⊗F
+E) and SB(Q)(L ⊗F E) are nonempty if and only if BE = B ⊗K (K ⊗F E)
+and QE = Q ⊗L (L ⊗F E) are split.
+
+
+where pY : Y × S → S is the projection induced by p. Both squares commute,
+and p∗ p∗ is the identity homomorphism, as Y is a geometrically rational variety. For every y ∈ Y , Y (F (y)) = ∅, so BF (y) and QF (y) are split, and thus
+φF (y) : K0 (AF (y) ) → K0 (SF (y) ) is an isomorphism by Proposition 4.3. So by
+Proposition 4.5, φY : K0 (Y ; A) → K0 (Y × S) is surjective. A diagram chase
+shows the top horizontal map φ is also surjective.
+Now let E be any ﬁeld extension of F such that S(E) = ∅. Then, BE and QE
+are split, and so φE : K0 (AE ) → K0 (SE ) is an isomorphism, again by Proposition 4.3. The homomorphisms φ and φE ﬁt into the following commutative
+diagram:
+
+where the vertical homomorphisms are induced by the inclusion F ⊂ E. The
+bottom horizontal map is an isomorphism, and the left vertical map is injective.
+It follows that φ is injective, and hence an isomorphism.
+As φ is an isomorphism, the hypothesis on the variety V in Proposition 4.5
+is always true, we obtain the following corollary.
+Corollary 4.6. φV : K0 (V ; A) → K0 (V × S) is surjective for any F -variety
+
+5. Higher K-theory
+We have shown that the K0 groups of S and A coincide. We will show that
+this is also true for the higher Quillen K-groups.
+For any F -varieties X, Y , and Z, and separable F -algebras A, B, and C,
+consider the functor:
+P(Y × Z; B op ⊗F C) × P(X × Y ; Aop ⊗F B) → P(X × Z; Aop ⊗F C),
+sending a pair (M, N) to (p13 )∗ (p∗ (M) ⊗B p∗ (N)), where p12 , p23 , and p13 are
+23
+
+the projections of X × Y × Z onto its factors. This functor is bi-exact, and
+thus induces a product map
+Kn (Y × Z; B op ⊗F C) ⊗Z Km (X × Y ; Aop ⊗F B) → Kn+m (X × Z; Aop ⊗F C).
+We will denote the image of u ⊗ x under this map by u •B x.
+We recall the K-Motivic Category C and some of its properties. The details
+can be found in [6] and [7]. Objects of C are pairs (X, A), where X is an
+
+
+F -variety and A is a separable F -algebra. For two pairs (X, A) and (Y, B) in
+C, we set MorC ((X, A), (Y, B)) := K0 (X × Y ; Aop ⊗F B). The composition law
+is g ◦ f = g •B f , for f : (X, A) → (Y, B) and g : (Y, B) → (Z, C) in C. For any
+pair (X, A) with X smooth, the identity element 1(X,A) ∈ K0 (X ×X; Aop ⊗F A)
+is the element [O∆ ⊗F A], where ∆ ⊂ X ×X is the diagonal. For any F -variety
+X and any separable F -algebra A, we will write X for the pair (X, F ) and
+A for the pair (Spec F, A). Finally, for any F -variety V and any nonnegative
+V
+integer n, we have a realization functor Kn , which sends an object (X, A) to
+V
+Kn (V × X; A), and Kn (f )(x) = f •A x ∈ Kn (V × Y ; B) for any morphism
+f ∈ MorC ((X, A), (Y, B)) = K0 (X × Y ; Aop ⊗F B) and x ∈ Kn (V × X; A). We
+Spec
+will denote Kn F by Kn .
+As we mentioned in the beginning of Section 4, there is a left action of Aop =
+EndOS (OS ) × EndOS (I) × EndOS (J ) on the locally free sheaf P = OS ⊕ I ⊕ J .
+So P ∈ P(X; Aop). The corresponding element [P] ∈ K0 (S; Aop ) deﬁnes a
+morphism u : A → S in C. It follows from the construction of the realization
+V
+functor that φV = K0 (u) for any V . In particular, K0 (u) = φ.
+Theorem 5.1. u : A → S is an isomorphism in C.
+Proof. Let V be any F -variety. Equating K0 (V ; A) (resp. K0 (V × S)) with
+V
+MorC (V, A) (resp. MorC (V, S)), K0 (u) : K0 (V ; A) → K0 (V × S) is just postV
+composition in C with u. By Corollary 4.6, K0 (u) = φV is surjective for any
+variety V . In particular, if V = S, there is an element v ∈ K0 (S; A) such that
+uv = [O∆ ], i.e. u has a right inverse v in C.
+We want to show that v is also a left inverse to u in C, i.e. vu = [A] ∈
+K0 (Aop ⊗F A). As K0 (Aop ⊗F A) ֒→ K0 ((Aop ⊗F A)F ) = K0 (Aop ⊗F AF ), it
+F
+suﬃces to consider the case where K, L, B and Q are split. So A = F ×M3 (F ×
+F )×M2 (F ×F ×F ), and thus A is isomorphic in C to F ×(F ×F )×(F ×F ×F )
+(cf. example 1.6 of [6]). So K0 (A) ∼ Z6 , and MorC (A, A) = K0 (Aop ⊗F A) ∼
+
+
+M6 (Z). Moreover, under this isomorphism [A] ∈ K0 (Aop ⊗F A) corresponds to
+the identity matrix.
+So vu ∈ K0 (Aop ⊗F A) is represented by a matrix M with integer entries.
+It follows that the corresponding homomorphism K0 (vu) from K0 (A) ∼ Z6
+
+to itself is multiplication by this matrix M. Now, as v is a right inverse
+to u in C, K0 (v) is a right inverse to K0 (u). However, K0 (u) = φ is an
+isomorphism by Theorem 4.2, so in fact K0 (v) = K0 (u)−1 . Thus K0 (vu) =
+K0 (v)K0 (u) = idK0 (A) , which forces M to be the identity matrix. Thus vu =
+[A] ∈ K0 (Aop ⊗ A), i.e. vu = idA in C.
+Corollary 5.2. For any integer n, any central simple F -algebra D, and any
+F -variety V ,
+Kn (V ; A ⊗F D) ∼ Kn (V × S; D).
+
+In particular, Kn (F ) ⊕ Kn (B) ⊕ Kn (Q) = Kn (A) ∼ Kn (S).
+
+Proof. For any central simple F -algebra D, Morita Equivalence gives a natural
+isomorphism K0 (S; Aop ⊗F D op ⊗F D) = K0 (S; Aop ). Thus the isomorphism u :
+
+A → S in C also deﬁnes an isomorphism from A⊗F D to (S, D) in C. Applying
+
+the realization functor Kn yields Kn (V ; A ⊗F D) ∼ Kn (V × S; D).
+
+We conclude the paper with an Index Reduction Formula for the function
+ﬁeld of the surface S(B, Q, KL). We will need the following lemma:
+Lemma 5.3 ([10]). Let X be a irreducible F -variety, and D a central simple
+F -algebra. The restriction homomorphism K0 (X; D) → K0 (DF (X) ) induced by
+the inclusion Spec(F (X)) → X is surjective.
+Lemma 5.4. Let X be an irreducible F -variety, and D a central simple F algebra.
+
+ind DF (X) =
+g. c. d.{rank(P ), ∀P ∈ P(X; D)}.
+deg D
+Proof. We recall that for any ﬁeld E and any central simple E-algebra D ′ ,
+K0 (D ′ ) is cyclic, generated by the class of a simple D ′ -module M ′ . Moreover,
+dimE (M ′ ) = deg(D ′ ) ind(D ′ ).
+The rank homomorphism rank : K0 (X; D) → K0 (F (X)) has the following
+decomposition:
+K0 (X; D) → K0 (DF (X) ) → K0 (F (X)),
+where the ﬁrst map is induced by the inclusion Spec(F (X)) → X, and the
+second map takes the class of a DF (X) -module to the class of the corresponding
+F (X)-vector space.
+As K0 (F (X)) is cyclic, the image of the rank homomorphism is n[F (X)],
+where n is the greatest common divisor of the numbers rank(P ), for all P ∈
+P(X; D). By the previous lemma, the homomorphism K0 (X; D) → K0 (DF (X) )
+is surjective. Thus if M is a simple DF (X) -module,
+n = dimF (X) (M) = deg(DF (X) ) ind(DF (X) ) = deg(D) ind(DF (X) ),
+and the result follows.
+Corollary 5.5 (Index Reduction Formula). Let S = S(B, Q, KL) be a del
+Pezzo surface of degree 6. For any central simple F -algebra D, ind DF (S) is
+equal to:
+i. g. c. d.{ind(D), 2 ind(D ⊗F B), 3 ind(D ⊗F Q)}, if K and L are ﬁelds.
+ii. g. c. d.{ind(D), ind(D ⊗F B1 ), ind(D ⊗F B2 )}, if K = F × F and L is
+a ﬁeld. Here B = B1 × B2 .
+iii. g. c. d.{ind(D), ind(D ⊗F Q1 ), 2 ind(D ⊗F Q2 )}, if K is a ﬁeld, and
+L = F × E. Here Q = Q1 × Q2 .
+iv. g. c. d.{ind(D), ind(D ⊗F Q1 ), ind(D ⊗F Q2 ), ind(D ⊗F Q3 )}, if K is a
+ﬁeld, and L = F × F × F . Here Q = Q1 × Q2 × Q3 .
+v. ind D, when K and L are not ﬁelds.
+Remark 5.6. In case ii., Q = M2 (L) is necessarily split, as K is not a ﬁeld.
+Then ind(D ⊗F M2 (L)) = ind(DL ), and as ind(D) divides [L : F ] ind(DL ) =
+3 ind(DL ), the greatest common divisor will not change if we remove the term
+
+3 ind(D ⊗F Q). Similarly, in cases iii., iv., and v., we can remove the term with
+the split B or Q when computing greatest common divisors.
+Proof. As u : A → S is an isomorphism in C, it deﬁnes an isomorphism K0 (u)
+from K0 (A ⊗F D) to K0 (S; D). Moreover, as A = F × B × Q, K0 (A ⊗F D) ∼
+
+K0 (D) ⊕ K0 (B ⊗F D) ⊕ K0 (Q ⊗F D).
+We will consider the case where K and L are ﬁelds. The proof of the other
+cases are similar. As D, B ⊗F D, and Q ⊗F D are central simple algebras
+(with centers F , K, and L, respectively), their K0 groups are cyclic, generated
+by the class of a simple module. Therefore by Lemma 5.4, deg(D) ind(DF (S) )
+will equal the greatest common divisor of the ranks of the images of simple
+D, B ⊗F D and Q ⊗F D modules under the image of K0 (u) : K0 (A ⊗F D) →
+K0 (S; D).
+So let MB be a simple B ⊗F D-module. Then dimK (MB ) = deg(B ⊗F
+D) ind(B ⊗F D), and thus
+rank(K0 (u)(MB )) = rank(MB ⊗B I)
+dimF (MB ) rank(I)
+dimF (B)
+dimK (MB ) rank(I)
+
+dimK (B)
+deg(B ⊗F D) ind(B ⊗F D) rank(I)
+
+dimK (B)
+= 2 deg(D) ind(B ⊗F D).
+
+
+
+Similarly, if MQ (resp. MF ) is a simple Q ⊗F D-module (resp. D-module),
+rank(K0 (u)(MQ )) = 3 deg(D) ind(D⊗F Q) (resp. rank(K0 (u)(MF )) = deg(D) ind(D)),
+and the result follows.
+
+Abstract. Let S be a degree six del Pezzo surface over an arbitrary ﬁeld F .
+Motivated by the ﬁrst author’s classiﬁcation of all such S up to isomorphism [3]
+in terms of a separable F -algebra B × Q × F , and by his K-theory isomorphism
+Kn (S) ∼ Kn (B × Q × F ) for n ≥ 0, we prove an equivalence of derived
+
+categories
+Db (cohS) ≡ Db (modA)
+where A is an explicitly given ﬁnite dimensional F -algebra whose semisimple
+part is B × Q × F .
+
+1. Introduction
+We will work over an arbitrary ﬁeld F .
+Throughout S denotes a degree six del Pezzo surface over F . Equivalently, S
+is a smooth projective surface over F whose anti-canonical sheaf is ample and has
+self-intersection number 6.
+
+Throughout F will denote a separable closure of F and we will write
+
+S = SF = S ×Spec F Spec F .
+
+In [3], the ﬁrst author classiﬁed such S up to isomorphism by associating to S
+a pair of separable F -algebras B and Q, both deﬁned as endomorphism rings of
+certain locally free sheaves on S. Furthermore, it was shown there that the algebraic
+K-theory of S is isomorphic to that of the algebra B × Q × F .
+Let cohS denote the category of coherent sheaves on S and let modA denote
+the category of noetherian right A-modules. Let ≡ denote equivalence of derived
+categories. Our main result (Theorem 4.5) establishes a derived equivalence
+(1-1)
+
+Db (cohS) ≡ Db (modA)
+
+where A is a ﬁnite dimensional F -algebra whose semi-simple quotient is B × Q × F .
+We prove this equivalence by constructing a tilting bundle T on S that has A as
+its endomorphism ring. (The deﬁnition of a tilting bundle is given in section 4.)
+The main novelty of our approach is that we do not make any assumptions on the
+base ﬁeld F . Since the ﬁeld F is arbitrary, we cannot assume that S is obtained by
+blowing up P2 (in fact S could be a minimal surface), nor can we use exceptional collections.
+
+1991 Mathematics Subject Classiﬁcation. 116E35, 14F05, 14J26, 14J60.
+Key words and phrases. Derived equivalence, del Pezzo surface, arbitrary ﬁeld.
+M. Blunk was supported by the National Science Foundation, Award No. 0902659. S.J.
+Sierra was supported by the National Science Foundation, Award No. 0802935. S.P. Smith was
+supported by the National Science Foundation, Award No. 0602347.
+Acknowledgments. All three authors acknowledge the support of the National
+Science Foundation with gratitude. We would also like to thank the referee for their
+comments. This research was partially done while the ﬁrst author was visiting the
+University of Washington, and he would like to thank the institution for its support
+and excellent working conditions. Finally, the ﬁrst author would like to thank
+Aravind Asok, Baptise Calm`s, and Daniel Krashen for suggesting this problem.
+
+
+2. Basic facts about S
+
+In this section, we give basic facts about the degree 6 del Pezzo surface S. Since
+all the results here are well-known, we do not give references.
+
+There are six (−1)-curves on S, which we may take to lie in the following conﬁguration:
+M2
+
+
+The Picard group is
+
+Usually we only care about the class of a divisor in Pic S. We will write
+¯=
+Pic S ∼
+
+D1 ∼ D2
+if D1 and D2 are linearly equivalent divisors.
+As remarked in the discussion after Prop. 2.1 in [3], the group of connected
+¯
+components of the group Aut S is S2 × S3 , which can be identiﬁed with the au¯
+tomorphism group of the hexagon of (−1)-curves on S. In particular, there is an
+¯ that cyclically permutes the six exceptional lines. It is easy to
+element σ ∈ Aut(S)
+¯
+see that (1 + σ)(1 − σ 3 ) acts trivially on Pic S.
+An anti-canonical divisor is
+−KS := L1 + L2 + L3 + M1 + M2 + M3 .
+¯
+This is ample. We deﬁne two particular divisors
+(2-2)
+
+H := L1 + M2 + M3 ∼ L2 + M1 + M3 ∼ L3 + M1 + M2
+
+and
+(2-3)
+H ′ := L1 + L2 + M3 ∼ L2 + L3 + M1 ∼ L3 + L1 + M2
+¯
+on S. Note that σ(H) ∼ H ′ and σ 2 (H) ∼ H.
+
+A DERIVED EQUIVALENCE FOR A DEGREE 6 DEL PEZZO SURFACE
+
+3
+
+¯
+We deﬁne the degree of a divisor C on S as deg C = −C · K. Each exceptional
+line has degree 1.
+¯
+¯
+There are two morphisms f, f ′ : S → P2 , each of which realizes S as the blowup
+¯
+F
+2
+of PF at three non-collinear points. We choose these so that f contracts the lines
+¯
+L1 , L2 , and L3 and f ′ contracts the lines M1 , M2 , and M3 . These two morphisms
+¯
+induce injective group homomorphisms f ∗ , f ′∗ : Pic P2 → Pic S. If ℓ is a line on
+P2 , then f ∗ ℓ = H and f ′∗ ℓ = H ′ .
+¯
+F
+¯
+¯
+¯
+The action of Gal(F /F ) on the exceptional lines on S induces actions of Gal(F /F )
+on
+5
+
+OS (σ i H)
+¯
+
+I :=
+i=0
+
+and
+
+5
+
+OS (σ i (L1 + M2 ))
+¯
+
+J :=
+i=0
+
+¯
+¯
+that are compatible with its action on S. In particular, I and J are Gal(F /F )invariant. It follows that the locally free sheaves I and J descend to locally free
+sheaves I and J on S.
+Deﬁne
+T := I ⊕ J ⊕ OS ,
+T := I ⊕ J ⊕ OS ,
+¯
+and
+B := EndS I,
+Q := EndS J ,
+A := EndS T .
+In [3] it is shown that S is determined up to isomorphism by the pair of F -algebras
+op
+(B, Q). (Actually, in [3], B is deﬁned as EndS I ∨ . Since sending a homomorphism α : I → I to its transpose α∨ : I ∨ → I ∨ is an anti-isomorphism from EndS I
+to EndS I ∨ , our B is the same as that in [3], and similarly for Q.) As discussed in
+[3], the algebras B and Q are Azumaya over their centers, which are respectively
+´tale quadratic and cubic extensions of F . Moreover, these ´tale centers can be ree
+e
+¯
+covered from the action of Gal(F /F ) on the hexagon of (−1)-curves, as the action
+¯
+induces a 1-cocycle of Gal(F /F ) with values in S2 × S3 , inducing a pair of ´tale
+e
+extensions of F , quadratic and cubic.
+We end this section with two results about the endomorphism algebra of T .
+Lemma 2.1. Let A := EndS T . Then
+
+
+B HomS (J , I) HomS (OS , I)
+Q
+HomS (OS , J ) .
+A = 0
+0
+0
+F
+
+Proof. It suﬃces to show HomS (I, J ) = HomS (I, OS ) = HomS (J , OS ) = 0.
+¯
+¯
+¯
+¯
+¯
+However, each of these three Hom-spaces is isomorphic to a direct sum of terms of
+¯ ¯
+the form H 0 (S, OS (D)) for a divisor D with deg D < 0. But if D has a section
+then D ∼ D′ for some eﬀective D′ so deg D = −D′ .K ≥ 0. These Hom spaces are
+therefore zero.
+The projective dimension of a left T -module is denoted by pdimT M . The global
+homological dimension of T is deﬁned and denoted by
+gldim T := sup{pdimT M | M ∈ ModT }.
+Proposition 2.2. gldim A ≤ 2.
+
+4
+
+M. BLUNK, S.J. SIERRA, AND S. PAUL SMITH
+
+Proof. Let R and S be rings and X an R-S-bimodule. If S is a semisimple ring,
+then
+R X
+gldim
+= max{pdimR X + 1, gldim R}.
+0 S
+(See [1, Prop. III.2.7].) Applying this result twice, ﬁrst to
+A′ :=
+
+(2-4)
+
+B
+0
+
+Hom(J , I)
+Q
+
+then to A with R = A′ and S = F , gives the desired result.
+3. Cohomology vanishing lemmas
+We will prove several results about vanishing of cohomology and Ext-groups for
+sheaves on S. These results will be used in Section 4 to show that T is a tilting
+bundle and therefore induces an equivalence of derived categories.
+A key step in proving that T is tilting is showing that Exti (T , T ) = 0 for i > 0.
+S
+This reduces, by ﬂat base change, to proving that Exti¯ (T , T ) = 0. Given the
+S
+explicit description of T as a direct sum of invertible sheaves, it suﬃces to prove
+that h1 (D − D′ ) = h2 (D − D′ ) = 0 for all D and D′ belonging to the list
+(3-1)
+
+H,
+
+H ′,
+
+L1 + M2 ,
+
+L2 + M3 ,
+
+L3 + M1 ,
+
+0.
+
+We will make repeated use of the relation Li + Mj ∼ Lj + Mi .
+¯
+Proposition 3.1. Let D and D′ be divisors on S appearing in the list (3-1). Then
+−3 ≤ deg(D − D′ ) ≤ 3.
+Furthermore,
+(1) if deg(D − D′ ) = 1, then D − D′ is linearly equivalent to an exceptional
+line.
+(2) if deg(D − D′ ) = 2, then D − D′ ∼ Li + Mj for some i = j ∈ {1, 2, 3}.
+(3) if deg(D − D′ ) = 3, then D − D′ is linearly equivalent to either H or H ′ .
+(4) if deg(D − D′ ) = 0, then D − D′ is linearly equivalent to either 0, Li − Lj ,
+Li − Mi , or Mi − Li for some i, j ∈ {1, 2, 3}.
+(5) if deg(D − D′ ) < 0, then D − D′ is linearly equivalent to either −Li , or
+−Mj , or −Li − Mj , or −H, or −H ′ .
+Proof. Exceptional lines have degree 1 so deg H = deg H ′ = 3 and deg(Li + Mj ) =
+2. It follows that the degree of D − D′ is between 3 and -3.
+(1) If deg(D−D′ ) = 1, then D is linearly equivalent to H or H ′ and D′ = Li +Mj
+for some i, j. It follows from (2-2) and (2-3) that D − D′ is linearly equivalent to
+an exceptional line, and every exceptional line can occur as D − D′ .
+(2) and (3) are obvious.
+(4) In this case D and D′ have the same degree.
+If deg D = deg D′ = 2, then D = Li + Mj and D′ = Lk + Mℓ . By considering all
+possible i, j, k, ℓ, we see that D − D′ is linearly equivalent to a divisor of the form
+Li − Lj .
+If deg D = deg D′ = 3, then, for example, D ∼ H and D′ ∼ H ′ , and D − D′ ∼
+Li − Mi . Switching the roles of H and H ′ , we see D − D′ ∼ Mi − Li . Finally, we
+may have D − D′ ∼ 0.
+(5) This is the mirror of the cases (1)-(3).
+
+A DERIVED EQUIVALENCE FOR A DEGREE 6 DEL PEZZO SURFACE
+
+5
+
+Corollary 3.2. Suppose D is the diﬀerence of two divisors appearing in the list
+¯
+(3-1). If deg D ≥ −2, then there is an exceptional line E on S such that D − E is
+also a diﬀerence of two divisors appearing in the list (3-1) and D.E ≥ −1.
+Proof. This is established through case-by-case analysis using Proposition 3.1 to
+look at all the possibilities for D.
+¯
+A divisor D on S is good if h1 (D) = h2 (D) = 0.
+¯
+Lemma 3.3. The divisors −H and −H ′ on S are good.
+¯
+Proof. The existence of the morphisms f, f ′ : S → P2 allows us to use the Leray
+¯
+F
+spectral sequence. The arguments for −H and −H ′ are the same so we only prove
+the result for −H.
+¯
+Because S is a blowup of P2 , f∗ OS = OP2 and Rj f∗ OS = 0 if j ≥ 1.
+¯
+¯
+¯
+F
+¯
+F
+Since OS (−H) ∼ f ∗ OP2 (−ℓ), the projection formula gives
+=
+¯
+¯
+F
+Rj f∗ OS (−H) = Rj f∗ OS ⊗ f ∗ OP2 (−ℓ)
+¯
+¯
+¯
+F
+
+∼ Rj f∗ O ¯ ⊗ OP2 (−ℓ)
+=
+S
+¯
+F
+∼
+=
+
+OP2 (−ℓ) if j = 0
+¯
+F
+
+0
+
+if j = 0.
+
+The Leray spectral sequence
+¯ ¯
+H i (P2 , Rj f∗ OS (−H)) ⇒ H i+j (S, OS (−H))
+¯
+¯
+F
+therefore degenerates to give
+¯ ¯
+H i (S, OS (−H)) ∼ H i (P2 , OP2 (−ℓ))
+=
+¯
+F
+for all i. The result follows because H i (P2 , OP2 (−ℓ)) = 0 for all i.
+¯
+F
+¯
+Lemma 3.4. Let C be any divisor on S, and let E be one of the (−1)-curves. If
+C − E is good and C.E ≥ −1, then C is good.
+Proof. The long exact sequence in cohomology associated to
+0 → OS (C − E) → OS (C) → OE (C) → 0
+¯
+¯
+reads in part
+// H 1 (S, O ¯ (C − E))
+¯ S
+
+// H 1 (S, O ¯ (C))
+¯ S
+
+// H 1 (S, OE (C))
+¯
+
+// H 2 (S, O ¯ (C − E))
+¯ S
+
+// H 2 (S, O ¯ (C))
+¯ S
+
+// H 2 (S, OE (C)).
+¯
+
+//
+
+By hypothesis, the left-most term in each row is zero. The right-most term in each
+¯
+row is also zero because H i (S, OE (C)) ∼ H i (P1 , OP1 (C.E)). Hence C is good.
+=
+¯
+F
+
+6
+
+M. BLUNK, S.J. SIERRA, AND S. PAUL SMITH
+
+4. The tilting bundle T
+In this section, we show that T is a tilting bundle and prove our main result.
+Proposition 4.1. Let i ≥ 1. Then Exti (T , T ) = 0.
+S
+Proof. By ﬂat base change it suﬃces to prove this when F is separably closed so
+¯
+we assume that F = F . In that case Exti (T , T ) is isomorphic to a direct sum of
+S
+terms of the form H i (S, OS (D − D′ )) where D and D′ are divisors in the list (3-1).
+It therefore suﬃces to show that D − D′ is good whenever D and D′ are divisors
+in the list (3-1).
+We argue by induction on deg(D −D′ ). By Proposition 3.1, −3 ≤ deg(D −D′ ) ≤
+3. If deg(D − D′ ) = −3, then D − D′ is good by Lemma 3.3. Now suppose that
+−2 ≤ deg(D − D′ ) ≤ 3. By Corollary 3.2, there is an exceptional line E such
+that D − D′ − E is a diﬀerence of divisors in (3-1) and (D − D′ ).E ≥ −1. By the
+induction hypothesis, D − D′ − E is good, and it then follows from Lemma 3.4 that
+D − D′ is good.
+¯
+Since S is a del Pezzo surface of degree ≥ 6 it is a toric variety so we can, and
+will, make use of Cox’s homogeneous coordinate ring for it [5].
+¯
+Lemma 4.2. Every F ∈ cohS has a ﬁnite resolution in which all terms are direct
+¯
+sums of invertible sheaves OS (D) for various divisors D on S.
+¯
+¯
+Proof. Let A be Cox’s homogeneous coordinate ring for S [5]. Then A is a
+¯ Let M be a ﬁnitely generated graded
+polynomial ring with a grading by Pic(S).
+A-module. Then M has a ﬁnite projective resolution in the category of graded Amodules. By [9, Lemma 2.2], every ﬁnitely generated projective graded A-module
+¯
+¯
+is a direct sum of twists of A. The exact functor Gr(A, Pic(S)) → QcohS, M
+M,
+described in [5, Thm. 3.11] sends the resolution of M to an exact sequence in
+¯
+QcohS in which the right-most term is M and all other terms are direct sums of
+¯
+¯
+various OS (D), D ∈ Div(S). Given F ∈ cohS, there is a ﬁnitely generated graded
+¯
+∼ M.
+A-module M such that F =
+For the rest of this paper, we will work in the derived category. If D is a triangulated category, we denote the shift of an object M by M[1]. Recall that a
+subcategory of D is thick (´paisse) if it is closed under isomorphisms, shifts, taking
+e
+cones of morphisms, and taking direct summands of objects.
+Let D be a triangulated category and E a set of objects in D. Then
+• Dc denotes the full subcategory of D consisting of the compact objects, i.e.,
+those objects C such that HomD (C, −) commutes with direct sums;
+• E denotes the smallest thick full triangulated subcategory of D containing
+E;
+• E ⊥ denotes the full subcategory of D consisting of objects M such that
+HomD (E[i], M) = 0 for all E ∈ E and all i ∈ Z.
+We say that
+• E generates D if E ⊥ = 0 and that
+• D is compactly generated if (Dc )⊥ = 0.
+Clearly, if D is compactly generated and E = Dc , then E generates D.
+Theorem 4.3 (Ravenel and Neeman [8]. Also see Thm. 2.1.2 in [4]). Let D be a
+compactly generated triangulated category. Then a set of objects E ⊂ Dc generates
+D if and only if E = Dc .
+
+A DERIVED EQUIVALENCE FOR A DEGREE 6 DEL PEZZO SURFACE
+
+7
+
+¯
+The unbounded derived categories D(QcohS) and D(QcohS) are compactly genc
+b
+¯ c = Db (cohS).
+¯
+erated. Moreover, D(QcohS) = D (cohS) and D(QcohS)
+Tilting bundles. Let X be a projective scheme over a ﬁeld k. A locally free
+sheaf T ∈ cohX is a tilting bundle if it generates D(QcohX) and Exti (T , T ) = 0
+X
+for all i > 0.
+¯
+¯
+Theorem 4.4. T generates D(QcohS) and T = Db (cohS).
+¯
+¯
+Proof. By Theorem 4.3, it suﬃces to show that T = Db (cohS). Since cohS =
+¯
+Db (cohS) it suﬃces to show that every coherent OS -module belongs to T .
+¯
+¯
+If D is an eﬀective divisor on S we write ID for the ideal vanishing on D as
+a scheme. Thus ID ∼ OS (−D). Whenever we write an arrow OS (−D) → OS it
+= ¯
+¯
+¯
+will be with the tacit understanding that this is the composition of an isomorphism
+OS (−D) → ID followed by the inclusion ID → OS .
+¯
+¯
+Since M3 · (L1 + M2 + M3 ) = 0, OM3 ∼ OM3 (L1 + M2 + M3 ). It follows from
+=
+the exact sequences
+0 → OS (L1 + M2 ) → OS (L1 + M2 + M3 ) → OM3 (L1 + M2 + M3 ) → 0
+¯
+¯
+and
+0 → OS (−M3 ) → OS → OM3 → 0
+¯
+¯
+that OM3 and OS (−M3 ) belong to T . Hence OE and OS (−E) belong to T for
+¯
+¯
+all exceptional lines E.
+Since Li .Lk = 0 if i = k, there is an exact sequence
+0 → OS (−Li − Lk ) → OS (−Li ) ⊕ OS (−Lk ) → OS → 0.
+¯
+¯
+¯
+¯
+Twisting by Li + Mj + Lk , we obtain
+0 → OS (Mj ) → OS (Mj + Lk ) ⊕ OS (Li + Mj ) → OS (Li + Mj + Lk ) → 0.
+¯
+¯
+¯
+¯
+Therefore, OS (Mj ) ∈ T . From the exact sequence
+¯
+0 → OS → OS (Mj ) → OMj (Mj ) → 0,
+¯
+¯
+we deduce that OMj (Mj ) ∈ T .
+It follows that OE (E) ∈ T for every exceptional curve E. But OE is also
+in T so, because Db (cohP1 ) is generated by OP1¯ and OP1¯ (−1), it follows that
+¯
+F
+F
+F
+b
+¯
+D (cohE) ⊂ T . Hence OE (D) ∈ T for all divisors D on S.
+Suppose OS (D) ∈ T . Then OS (D − E) ∈ T because there is an exact
+¯
+¯
+sequence
+0 → OS (D − E) → OS (D) → OE (D) → 0.
+¯
+¯
+Likewise, OS (D + E) ∈ T because there is an exact sequence
+¯
+0 → OS (D) → OS (D + E) → OE (D + E) → 0.
+¯
+¯
+¯
+It follows that T contains OS (D) for all D ∈ Div S and therefore, by Lemma 4.2,
+¯
+¯
+contains F for every F ∈ cohS.
+When F is not separably closed T need not split as a direct sum of line bundles so the arguments in Theorem 4.4 can not be used to prove directly that
+T = Db (cohS). Instead we will show that T generates D(QcohS) and then apply
+Theorem 4.3.
+
+8
+
+M. BLUNK, S.J. SIERRA, AND S. PAUL SMITH
+
+Theorem 4.5. Let F be an arbitrary ﬁeld. Then
+RHomS (T , −) : Db (cohS) → Db (modA)
+is an equivalence of categories.
+Proof. We will show that T generates D(QcohS). It will then follow from Theorem
+4.3 that
+T = D(QcohS)c = Db (cohS).
+By Proposition 4.1, Exti (T , T ) = 0 for i > 0. By Proposition 2.2, A = EndS (T )
+S
+has ﬁnite global dimension. Thus we have shown that T is a tilting bundle and our
+theorem will then follow directly from [2, Thm. 3.1.2] (or [6, Thm. 7.6]).
+Let M ∈ D(QcohS) and suppose RHomS (T , M) = 0. We must show that
+M = 0.
+Since T is locally free, Hom S (T , −) and T ∨ ⊗S − are exact functors on QcohS.
+∨
+¯
+Likewise, Hom S (T , −) and T ⊗S − are exact functors on QcohS. Thus, for ex¯
+¯
+ample, RHom S (T , M) can be computed on D(QcohS) by applying Hom S (T , −)
+to each individual term in M.
+Consider the cartesian square
+v
+
+¯
+S
+
+// S
+p
+
+q
+
+
+¯
+Spec(F )
+
+
+// Spec(F ).
+
+u
+
+Since u (and therefore v) is ﬂat, the natural transformation
+u∗ Rp∗ → Rq∗ v ∗
+¯
+is an isomorphism of functors from D(QcohS) to D(F ) [7, (3.18)]. We now have
+0 = u∗ RHomS (T , M) ∼ u∗ Rp∗ RHom S (T , M) by [7, p.85]
+=
+∼ Rq∗ v ∗ RHom S (T , M) by [7, (3.18)]
+=
+∼ Rq∗ v ∗ (T ∨ ⊗L M)
+=
+S
+∼ Rq∗ (T ∨ ⊗L Lv ∗ M)
+=
+¯
+S
+∼ Rq∗ RHom ¯ (T , Lv ∗ M)
+=
+S
+∼ RHom ¯ (T , Lv ∗ M).
+=
+S
+
+¯
+But T generates D(QcohS) so v M = 0. Since v ∗ is faithful, M = 0, and we are
+done.
+∗
+
+Corollary 4.6 (cf. [3], Corollary 5.2). The functor HomS (T , −) : coh(S) → modA
+induces an isomorphism
+HomS (T , −) : K∗ (S) → K∗ (F × B × Q).
+Proof. It follows from Theorem 1.98 of [10] that the equivalence of derived categories found in Theorem 4.5 induces an isomorphism in K-theory
+HomS (T , −) : K∗ (cohS) → K∗ (modA).
+Moreover, A has a nilpotent ideal I so that A/I is isomorphic to its semi-simple
+quotient F × B × Q. Thus, it follows that the K-theory of A is isomorphic to that
+of F × B × Q, and we recover the isomorphism found in [3].
+
+A DERIVED EQUIVALENCE FOR A DEGREE 6 DEL PEZZO SURFACE
+
+9
+
+References
+[1] M. Auslander, I. Reiten, and S. Smalø, Representation Theory of Artin Algebras, Camb.
+Studies in Adv. Math., No. 36, 1995.
+[2] D. Baer, Tilting sheaves in representation theory of algebras, Manus. Math., 60 (1988) 323347.
+[3] M. Blunk, Del Pezzo surfaces of degree 6 over an arbitrary ﬁeld, J. Algebra, 323 (2010), no.
+1, 42–58
+[4] A. Bondal and M. Van den Bergh, Generators and representability of functors in commutative
+and noncommutative geometry, Moscow Mathematical Journal, 3 (2003), no. 1, 1-36.
+[5] D.A. Cox, The homogeneous coordinate ring of a toric variety, J. Alg. Geom., 4 (1995), no.
+1, 17-50.
+[6] L. Hille and M. Van den Bergh, Fourier-Mukai transforms, pp. 147-173 in Handbook of Tilting
+Theory, Lond. Math. Soc. Lect. Note Series (No. 332), Eds. L.A. H¨gel, D. Happel, and H.
+u
+Krause, Camb. Univ. Press, 2007.
+[7] D. Huybrechts, Fourier-Mukai transforms in algebraic geometry, Oxford Univ. Press, 2006.
+[8] A. Neeman, The connection between the K-theory localization theorem of Thomason,
+Trobaugh and Yao and the smashing subcategories of Bousﬁeld and Ravanel, Ann. Sci. de l’
+´
+Ec. Norm. Sup., 25 (1992), no. 5, 547-566.
+[9] S.P. Smith, Computation of the Grothendieck and Picard groups of a toric DM stack
+X by using a homogeneous coordinate ring for X , Glasgow Math. Jour., to appear.
+arXiv:0806.0192v2.
+[10] R. W. Thomason and T. Trobaugh, Higher algebraic K-theory of schemes and of derived
+categories, pp. 247–435 in The Grothendieck Festschrift, Vol. III , Progr. Math., 88, Birkhuser
+Boston, Boston, MA, 1990.
+Department of Mathematics, Univ. of British Columbia., Department of Mathematics, Box 354350, Univ. Washington, Seattle, WA 98195
+E-mail address: mblunk@math.ubc.ca, sjsierra@math.washington.edu, smith@math.washington.edu
+
+arXiv:1204.0537v1 [math.AG] 2 Apr 2012
+
+A DERIVED EQUIVALENCE FOR SOME TWISTED
+PROJECTIVE HOMOGENEOUS VARIETIES
+MARK BLUNK
+Abstract. In this paper we construct a tilting sheaf for SeveriBrauer Varieties and Involution Varieties. This sheaf relates the
+derived category of each variety to the derived category of modules over a ring whose semisimple component consists of the Tits
+algebras of the corresponding linear algebraic group.
+
+Contents
+1. Introduction
+1.1. Notation
+1.2. Acknowledgments
+2. Tilting Sheaf
+3. Global Dimension
+3.1. Generation and thick subcategories
+4. Groups, Quotients, and Associated Sheaves
+5. Severi-Brauer Varieties
+6. Generalized Severi-Brauer Varieties
+7. Involution Varieties
+8. K-theory
+References
+
+1
+2
+3
+3
+4
+4
+4
+6
+10
+11
+14
+15
+
+1. Introduction
+The origin of this direction of research is the classic paper [5] of
+Beilinson, where it is shown that the derived category of the projective space PC (V ) that the sheaves O, O(−1), . . . O(− dim(V ) + 1) form
+a simple set of generators, (what is called a strong exceptional collection). In [16], Kapranov generalized these calculations to form strong
+1991 Mathematics Subject Classiﬁcation. 20G15, 14M17.
+Key words and phrases. linear algebraic groups, tilting sheaves, homogeneous
+varieties.
+M. Blunk was supported in part by the National Science Foundation, Award No.
+0902659.
+1
+
+2
+
+MARK BLUNK
+
+exceptional collections for Grassmannians and Quadrics over C. All of
+these varieties are Projective Homogeneous Varieties. That is, they are
+of the form G/P , where G is a semisimple linear algebraic group and P
+is a parabolic subgroup. It is a conjecture of Catanese that every G/P
+should possess such a collection, and there have been several results in
+this direction (see [9],[18], [19], and [12], among others).
+In this paper, we will work in another direction. The varieties considered here are twisted projective homogeneous varieties. These are
+varieties X deﬁned over a ﬁeld which, after extension of scalars to a separable closure, become isomorphic to some G/P . Examples of such varieties are Severi-Brauer Varieties and Involution Varieties. The group
+G is of type A for Severi-Brauer varieties and of type D for Involution
+Varieties.
+Examples of such varieties are Severi-Brauer Varieties and Involution
+Varieties. Instead of producing exceptional collections, in this paper
+we follow [3] and produce tilting sheaves (see Section 2 for a deﬁnition).
+Our main result is to produce a locally free sheaf T on X which induces
+a derived equivalence
+D b (Coh(X)) → D b (
+
+mod − End(T )).
+
+This paper is heavily inﬂuenced by [22], where the Quillen K-theory
+of twisted Projective Homogeneous Varieties is computed. In [8], the
+author produced a locally sheaf F on a del Pezzo surface S of degree
+6 which was used to describe the K-theory of S. Later, in [7], it was
+shown that the same sheaf F is a tilting sheaf for the surface S. This
+paper completes the chain by showing that the sheaves produced in [22]
+can be used to develop derived equivalences for some twisted Projective
+Homogeneous Varieties. The arguments in this paper follow a similar
+line of reasoning to that found in [7].
+In Section 2, we recall the deﬁnition of a tilting sheaf, our main
+tool for constructing the desired derived equivalences. In Section 3, we
+recall some needed facts about modules and generation of categories
+and in 4, we brieﬂy recall some basic properties of semisimple linear
+algebraic groups. In particular we state the Borel-Weil-Bott Theorem
+(Theorem 4.1), which we will use repeatedly. In the remainder of the
+paper, we construct tilting sheaves for Severi-Brauer Varieties, Generalized Severi-Brauer Varieties, and Involution Varieties. We conclude
+in Section 8 with an application on computing the Quillen K-theory of
+these varieties.
+1.1. Notation. Let us ﬁx some notation. We will let F denote a ﬁeld,
+and F a ﬁxed separable closure of F . The group Γ := Gal(F /F ) is the
+
+A DERIVED EQUIVALENCE FOR SOME TWISTED PROJECTIVE HOMOGENEOUS VARIETIES
+3
+
+Galois group. By a variety X over F we mean a reduced scheme of ﬁnite
+type over Spec(F ). The abelian category of quasicoherent sheaves on
+X will be denoted Qcoh(X), and Coh(X) is the abelian subcategory
+of sheaves on X. For a ring R, mod − R (resp. R − mod ) is the
+abelian category of ﬁnitely generated right (resp. left) R-modules.
+If A is an abelian category, then D(A) will denote the corresponding derived category A (confer [13, Chapter III]). This is a triangulated
+category objects are complexes with terms in A, and maps homomorphisms of chain complexes, modulo homotopy equivalences, and localizing the set of quasi-isomorphisms. The subcategory of bounded
+complexes will be denoted D b (A). If M ∈ A, by abuse of notation
+we will use the same symbol to denote the complex in D b (A) with M
+concentrated in degree 0 and every other term equal zero.
+1.2. Acknowledgments. The author would like to thank Patrick Brosnan, Alexander Merkurjev, Edward Richmond for many useful discussions.
+2. Tilting Sheaf
+We say that a sheaf T on a smooth variety X is a tilting sheaf if the
+following conditions hold:
+• The sheaf T has no self extensions, i.e. RHomDb (X) (T [i], T ) =
+0, for i > 0.
+• The algebra EndOX (T ) of global endomorphisms of the sheaf
+T has ﬁnite global dimension (see Section 3 for a deﬁnition of
+global dimension of a ring).
+• There is no proper thick subcategory of D b (Coh(X)) containing
+the element T (see Section 3.1 for a deﬁnition of thick).
+Our main tool in this paper is the following theorem.
+Theorem 2.1 (Theorem 3.12 of [3]). Let X be a smooth variety, and
+let M ∈ Coh(X) be a tilting sheaf with S := EndOX (M). Then the
+functors
+F := Hom(M, −) : Coh(X) →
+G := − ⊗ M :
+
+mod − S
+
+mod − S → Coh(X)
+
+induce equivalences of categories,
+RF : D b (Coh(X)) → D b (
+LG : D b (
+inverse to each other.
+
+mod − S)
+
+mod − S) → D b (Coh(X)),
+
+4
+
+MARK BLUNK
+
+3. Global Dimension
+Let R be a ring. The projective dimension of an arbitrary left Rmodule T is denoted by pdimR T . The global (homological) dimension
+of R is supremum of pdimR T over all such modules T .
+Proposition 3.1 ([2], Prop III.2.7). Let R and S be artinian F algebras , and M an R-S-bimodule, ﬁnitely generated over F . If S
+is a semisimple ring, then
+gldim
+
+R M
+0 S
+
+= max{pdimR M + 1, gldim R}.
+
+3.1. Generation and thick subcategories. We recall some properties of generation of triangulated categories (confer [21], [7, Section
+4]).
+Let D be a triangulated category, and let E denote a subset of objects
+of D. A triangulated category is equipped with a shift operator. If
+M ∈ D, the shift of M will be denoted by M[1].
+• A subcategory of C ⊂ D is said to be thick (´paisse) if it is
+e
+closed under isomorphisms, shift, taking cones of morphisms,
+and taking direct summands of objects in C.
+• An object C ∈ D is said to be compact if HomD (C, −) commutes with direct sums. Let D c ⊂ D denote the subcategory of
+compact objects in D.
+• We deﬁne E to be the smallest thick full subcategory of D
+containing the elements of E.
+• We deﬁne E ⊥ to be the subcategory of D consisting of all objects
+M such that HomD (E[i], M) = 0, for all i ∈ Z and all E ∈ E.
+We say that E generates D if E ⊥ = 0. If D c generates D, then we
+say D is compactly generated.
+If D is compactly generated and E ⊂ D c . It’s clear that if E = D c ,
+then E generates D. The following theorem tells us that the converse
+is also true.
+Theorem 3.2 (Ravenel and Neeman [21]. Also see Thm. 2.1.2 in [10]).
+Let D be a compactly generated triangulated category. Then a set of
+objects E ⊂ D c generates D if and only if E = D c .
+4. Groups, Quotients, and Associated Sheaves
+We brieﬂy summarize some deﬁnitions and properties of linear algebraic groups, which we will need in the paper. Some references for this
+section are [11], [15, I.5], [23], and [17, Chapter 24].
+
+A DERIVED EQUIVALENCE FOR SOME TWISTED PROJECTIVE HOMOGENEOUS VARIETIES
+5
+
+Let G denote a split, semisimple linear algebraic group over F , and
+T ⊂ G a ﬁxed maximal torus. The group Lie(T )∗ := Hom(T, Gm ) will
+denote the character lattice of G. It is a free Z-module of ﬁnite rank.
+The set R ⊂ Lie(T )∗ will denote a root system corresponding to T , R+
+the set of positive roots, and R− := −R+ the set of negative roots, and
+the set S = {α1 , . . . , αr } ⊂ R+ is a basis of simple roots.
+For α ∈ Lie(T )∗ , let Lie(G)α denote the eigenspace of Lie(G) corresponding to α. The Lie subalgebra
+Lie(G)α
+
+Lie(T )
+α∈R+
+
+is Lie(B) for a ﬁxed Borel subgroup B of G determined by T and S.
+If I ⊂ S, then the Lie subalgebra
+Lie(G)α ,
+
+Lie(B) ⊕
+α∈R− (I)
+
+where
+R− (I) := {α ∈ R− | α = Σr ai αi with ai ≤ 0, ai = 0 ∀ αi ∈ I},
+i=1
+is Lie(PI ), for a unique parabolic subgroup PI ⊃ B of G. Every such
+parabolic subgroup (intermediate between B and G) arises in this fashion. For example, P∅ = G and PS = B.
+Let {λ1 , . . . , λr } be the set of fundamental weights determined by
+the simple roots αi , and Λ =: Z[λi ] be the weight lattice. If PI is a
+parabolic subgroup of G, then we say a weight λ is dominant for PI if
+λ = Σi∈I ni λi + Σj ∈I nj λj , where nj ≥ 0.
+/
+Also, let ρ = Σi λi .
+The Weyl group W is the group generated by the simple reﬂections sα
+corresponding to α ∈ S. For w ∈ W , the length of w is the least number
+of factors in a decomposition of w as a product of simple reﬂections.
+There is an an action of W on the weight lattice Λ. We will need
+another action, called the dot or aﬃne action on Λ:
+w.λ := w(λ + ρ) − ρ.
+We say that a weight λ is singular if there is some non-trivial w ∈ W
+such that w.λ = λ.
+If P ⊂ G is a parabolic subgroup, there exists a decomposition, called
+the Levi decomposition, of P into a semisimple or Levi factor LP and a
+unipotent subgroup Ru (P ). If φ : P → GL(V ) is an irreducible ﬁnitedimensional representation, Ru (P ) acts trivially, and so φ descends to a
+representation of the Levi factor LP . Each such representation posses
+a unique highest weight λ ∈ Λ which determines the representation.
+
+6
+
+MARK BLUNK
+
+Moreover this weight is dominant for P . For a weight λ, we will denote
+the corresponding representation vector space by V (λ).
+Finally, if φ : P → GL(V ) is as in previous paragraph, with corresponding weight λ, then we deﬁne a locally free sheaf of rank dim(V )
+on the projective homogeneous variety G/P as follows:
+G ×r V := G × V /{(g, v) ∼ (gp−1, φ(p)(v)) | p ∈ P, g ∈ G, v ∈ V }.
+The projection G × V → G induces a map G ×r V → G/P , deﬁning a
+vector bundle over G/P . The corresponding locally free sheaf on G/P
+will be denoted OG/P (λ). A section of this sheaf can be thought of as
+a function F : G → V satisfying F (gp) = φ(p−1 )F (g).
+Let us recall the celebrated Borel-Weil-Bott theorem, which relates
+representations on P to the cohomology of the induced sheaf on the
+variety G/P .
+Theorem 4.1 (Theorem 5.0.1 of [4]). Let G be a simply connected
+split semisimple algebraic group, P ⊂ G be a parabolic subgroup, and
+λ ∈ Λ is dominant with respect to P . Consider the corresponding sheaf
+OG/P (λ) on G/P . Then:
+a If λ is singular,
+H r (G/P, OG/P (λ)) = 0, ∀r.
+b If λ is not singular, then there exists a unique w ∈ W such that
+w.λ is dominant. Moreover,
+H i (G/P, OG/P (λ)) = 0, i = l(w)
+H l(w) (G/P, OG/P (λ)) = V (w.λ).
+5. Severi-Brauer Varieties
+We recall some well known facts about central simple algebras (confer
+[1] and [17, Section I.1.B]). Let A be a central simple algebra over F of
+degree n. The algebra A has dimension over F equal to n2 , has no nontrivial two sided ideals, and center equal to F . Equivalently, A ⊗F F
+is isomorphic to EndF (V ′ ), for some F -vector space V ′ of dimension
+n. The algebraic group SL1 (A) is of type An . Every ﬁnitely generated
+right A-module has dimension, as an F -vector space, divisible by n,
+and we deﬁne the reduced dimension of M by
+dimF (M)
+.
+n
+Finally, we say that the algebra A is split if A = EndF (V ), where V is
+a ﬁnite dimensional F -vector space.
+rdimA (M) :=
+
+A DERIVED EQUIVALENCE FOR SOME TWISTED PROJECTIVE HOMOGENEOUS VARIETIES
+7
+
+Let X := SB(A) be the Severi-Brauer variety of the algebra A. This
+is an irreducible, smooth, projective variety of dimension n − 1, whose
+points consist of right ideals of A which have reduced dimension 1. If
+E/F is a ﬁeld extension, SB(A)E = SB(A⊗F E). When A = EndF (V )
+for some F -vector space V of dimension n, every right ideal of A of
+reduced dimension 1 is determined by a unique 1-dimensional subspace
+of V . Thus SB(EndF (V )) = P(V ). In particular, Since P (V ) = G/P
+for G = SL(V ) and P = Pα1 the stabilizer of a line in V , we see that
+SB(A) is a twisted form of a projective homogeneous variety.
+We deﬁne the ‘tautological’ sheaf I on X (confer [1], [22, section
+10.2]), a subsheaf of the consist sheaf A. The ﬁber over a closed point
+x ∈ X(F ) consists of the elements a ∈ AF such that a ∈ x ⊂ AF (here x
+is a right ideal of AF of reduced dimension 1). This deﬁnes a locally free
+sheaf of rank n on X. This sheaf I is locally free, and has an induced
+right A action, and the algebra End(I) is isomorphic to the algebra A.
+Finally, If A = EndF (V ) is split, then I = OP(V ) (−λ1 ) ⊗F V ∗ .
+Finally, let
+T = OX ⊕ I 1 ⊕ I 2 ⊕ · · · ⊕ I ⊗(n−1) .
+We will show that T is a tilting sheaf for X.
+Theorem 5.1. The sheaf T has no self extensions, i.e.,
+RHomDb (Coh(X)) (T [i], T ) = 0,
+for i > 0.
+Proof. It suﬃces to extend scalars to F , so we may assume that F is
+separably closed. In this case, X = P(V ), and the sheaf T decomposes
+into a sum of invertible sheaves of the form OP(V ) (−jλ1 ), where j =
+0, 1, . . . , n − 1.
+So it suﬃces to show that
+RHomDb (Coh(P(V ))) (OP(V ) (−j1 λ1 )[i], OP(V ) (−j2 λ1 )) = 0,
+for i > 0 and j1 , j2 = 0, . . . n − 1. But
+RHomDb (Coh(P(V ))) (OP(V ) (−j1 λ1 )[i], OP(V ) (−j2 λ1 )) =
+Exti ) (OP(V ) (−j1 λ1 ), OP(V ) (−j2 λ1 )) =
+P(V
+H i (P(V ), OP(V ) ((j1 − j2 )λ1 )) = 0,
+for −n < j1 − j2 ≤ n and i > 0. This follows from Theorem 4.1, since
+the corresponding weight in each case is either dominant or singular.
+
+8
+
+MARK BLUNK
+
+Remark 5.2. Also, note that
+HomP(V ) (OP(V ) , OP(V ) (−iλ1 )) = H 0 (P(V ), OP(V ) (−iλ1 )) = 0,
+since the weight −iλ1 is singular when 1 ≤ i ≤ n − 1. We will need
+this in the proof of Theorem 5.3.
+Theorem 5.3. The algebra End(T ) has ﬁnite global dimension.
+Proof. We prove by induction on n. The base case n = 1 is trivial, as
+the ﬁeld F = End(Opt ) has global dimension 0.
+n−1
+Because T = ⊕i=0 I ⊗i , we have the following matrix presentation
+for End(T ) (by Remark 5.2, this matrix is lower triangular).
+
+F Hom(I, OX ) Hom(I ⊗2 , OX )
+0
+A
+∗
+
+0
+0
+A⊗2
+End(T ) = 
+.
+.
+.
+.
+.
+.
+.
+.
+.
+0
+0
+0
+
+···
+···
+···
+..
+.
+
+∗
+∗
+∗
+.
+.
+.
+
+
+
+
+
+.
+
+
+
+· · · A⊗n−1 )
+
+So we can write
+R
+B
+, where
+⊗n−1
+0 (A
+)
+
+
+F ∗
+∗ ···
+∗
+0 A ∗ ···
+∗ 
+
+
+ 0 0 A⊗2 · · ·
+∗ ,
+R=
+.
+.
+. 
+. .
+. .
+.
+.
+. 
+. .
+.
+.
+.
+⊗n−2
+0 0
+0 ··· A
+
+
+Hom(OX , I ⊗n−1 )
+.
+.
+.
+B=
+.
+
+EndX (T ) =
+
+Hom(I ⊗n−2 , I ⊗n−1 )
+
+By induction, the ring R has ﬁnite global dimension, and in particular, pdimR (B) is ﬁnite. Since A⊗ (n − 1) is semisimple, we have by
+Proposition 3.1 that gldim(EndX (T )) = max{pdimR (B)+1, gldim(R)},
+and we conclude that EndX (T ) has ﬁnite global dimension.
+Lemma 5.4. Assume that the algebra A is split. The sheaf T generates
+D(Qcoh(SB(A)), and T = D b (Coh(SB(A))).
+Proof. Since A = EndF (V ) is split, SB(A) = P(V ), and I = OP(V ) (−λ1 )⊗
+V ∗ . The sheaf OP(V ) (−iλ1 ) is a summand of T , for i = 0, · · · = n − 1.
+By [5] (or [16, Section 3]), we know that these invertible sheaves form
+
+A DERIVED EQUIVALENCE FOR SOME TWISTED PROJECTIVE HOMOGENEOUS VARIETIES
+9
+
+a strong exceptional collection on P(V ). In particular,
+= D b (Coh(P(V ))).
+
+OP(V ) (−iλ1 ) 0 ≤ i ≤ n − 1
+
+This forces T = D b (Coh(P(V ))), and hence the sheaf T generates
+D(Qcoh(P(V ))).
+Proposition 5.5. The sheaf T generates D(Qcoh(SB(A))).
+Proof. Let M ∈ D(Qcoh(SB(A))) and assume that
+RHomD(Qcoh(SB(A))) (T , M) = 0.
+Since T is locally free, Hom(T , −) and T ∗ ⊗ − are exact functors on
+∗
+Qcoh(X). (Similarly for Hom(T , −) and T ⊗ − on Qcoh(X).) Thus,
+for example, RHomX (T , M) can be computed on D(Qcoh(X)) by
+applying Hom(T , −) to each individual term in M.
+Consider the following cartesian square:
+SB(A)F
+
+SB(A) .
+/
+
+v
+
+q
+
+q
+
+
+
+
+Spec(F )
+
+u
+
+/
+
+Spec(F )
+
+Since u (and thus v) is ﬂat, it follows that the natural map
+u∗ Rp∗ → Rq∗ v ∗
+is an isomorphism of functors (see [14, (3.18)]).
+0 = u∗(RHomX (T , M))
+= u∗Rp∗ RHomX (T , M) By [14], page 85
+= Rq∗ v ∗ RHomX (T , M)
+= Rq∗ v ∗ (T ∨ ⊗L M)
+X
+∨
+
+= Rq∗ (T ⊗L v ∗ M)
+X
+= Rq∗ RHomX (v ∗ T , v ∗M)
+= RHomX (v ∗ T , v ∗M).
+The algebra AF splits, and thus v ∗ T = T generates D(Qcoh(X)),
+by Lemma 5.4. This implies that v ∗ (M) = 0. Since v is ﬂat, this forces
+M = 0. Hence, T generates D(Qcoh(X)).
+We conclude by collecting our results to prove the main theorem of
+this section.
+
+10
+
+MARK BLUNK
+
+Theorem 5.6. The map
+R Hom(T , −) : D b (Coh(X)) → D b (End(T ) −
+
+mod )
+
+is an equivalence of categories.
+Proof. The sheaf T generates D(Qcoh(X)) by Proposition 5.5, and
+since D(Qcoh(X)) is compactly generated, it follows that T = D b (Coh(X))
+by Theorem 3.2. The sheaf T has no-self extensions by Theorem 5.1.
+The algebra A = End(T ) has ﬁnite global dimension, by Theorem
+5.3. So T is a tilting sheaf, and the theorem follows from [3, Theorem
+3.1.2].
+Remark 5.7. In [6], the author produces a semi-orthogonal decomposition for the derived category of a Severi-Brauer scheme over the derived
+category of the base, by producing a collection of twisted sheaves which
+satisfy the necessary properties. In the case where the base is Spec(F ),
+this is equivalent to result here, since the twisting data comes from a
+Brauer class, i.e. the central simple algebra A.
+6. Generalized Severi-Brauer Varieties
+As in the previous section, let A be a central simple algebra of degree
+n. Let X = SB(r, A) be the Generalized Severi-Brauer Variety, for
+some 0 < r < n. The points of X are the right ideals I ⊂ A of
+reduced dimension r. Obviously, SB(1, A) is just the usual SeveriBrauer variety.
+Let I be the tautological sheaf of SB(r, A), deﬁned in an analogous
+fashion to the sheaf in Section 5. This is a locally free sheaf of rank
+rn. When A = End(V ) is split, SB(r, A) = SL(V )/Pαr , and I =
+OG/P (−λr ) ⊗ V ∗ . Let
+Σa (I).
+
+T =
+a
+
+Here a = (a1 , . . . , ar ) ∈ Nr , subject to the condition n ≥ a1 ≥ a2 ≥
+· · · ≥ ar ≥ 0 (that is, Young diagrams with at most n − r rows and
+at most r columns) and Σ is the Schur Functor corresponding to a.
+Finally, let d(a) = a1 + · · · + an .
+Theorem 6.1. The sheaf T has no self extensions.
+Proof. The proof is the same as in the proof of Theorem 5.1. The only
+diﬀerence is that the weight that appears in the argument is λr , instead
+of λ1 .
+Theorem 6.2. The ring End(T ) has ﬁnite global dimension.
+
+A DERIVED EQUIVALENCE FOR SOME TWISTED PROJECTIVE HOMOGENEOUS VARIETIES
+11
+
+Proof. The ring End(T ) is upper triangular, with diagonal entries of
+the form Ad(a) , which are all semisimple. The proof follows as in the
+proof of 5.3.
+Proposition 6.3. The sheaf T generates D(Qcoh(X)), and hence
+T = D b (Coh(X)).
+Proof. It suﬃces to show that T generates D(Qcoh(X)) in the case
+where A is split. In that case, T contains terms of the form Σa (OG/Pαr (−λr )).
+In [16, Theorem 3.4], it is shown that these sheaves form a strong exceptional collection for G/Pαr . In particular,
+Σa (OG/Pαr (−λr )), a
+
+= D b (Coh(G/Pαr )).
+
+It follows that T generates D(Qcoh(X)), and by Theorem 3.2, T =
+D b (Coh(X)).
+Theorem 6.4. The sheaf T is a tilting bundle, and thus
+RHom(T , −) : D b (Coh(X)) → D b ( mod − End(T ))
+is an equivalence of derived categories.
+Proof. The sheaf T has no self-extensions by Theorem 6.1, T =
+D ( Coh(X)) by Proposition 6.3, and the algebra End(T ) has ﬁnite
+global dimension by PROPOSITION 6.3. Thus T is a tilting sheaf,
+and the result follows by 2.1.
+7. Involution Varieties
+In this section we assume that char(F ) = 2.
+Let (A, σ) be a central simple algebra of degree 2n, equipped with
+an orthogonal involution σ. Recall ([17, Proposition 2.6] that σ is
+orthogonal if
+2n(2n + 1)
+,
+2
+2n(2n − 1)
+dimF Skew(A, σ) =
+.
+2
+Let X := I(A, σ) be the involution variety of A (confer [20], [24]). This
+is a codimension 1 subvariety of SB(A), whose points consists of the
+right ideals I ∈ SB(A) which are orthogonal, i.e. σ(I) · I = 0. We will
+let I ∈ Coh(I(A, σ)) to denote the pullback of the tautological bundle
+of SB(A) to I(A, σ).
+Recall from that introduction that Γ = Gal(F /F ). If F is a sheaf
+for the ´tale topology, we have the Hochschild-Serre Spectral Sequence:
+e
+dimF Sym(A, σ) =
+
+12
+
+MARK BLUNK
+
+[1, Section 2]
+H p (Γ, H q (Y , F )) → H p+q (Y, F ).
+If Y = SB(A), then Y = P(V ′ ) for some vector space V ′ over F .
+By looking at the edge terms of the spectral sequence, we have the
+following exact sequence:
+f
+
+0 → Pic(SB(A)) → Pic(P(V ′ ))Γ − Br(F ).
+→
+Here Pic(P(VF ))Γ = ZΓ = Z, generated by the invertible sheaf OP(VF ) (−λ1 ).
+The map f sends OP(VF ) (λ1 ) to the class of A in the Brauer group
+Br(F ). Since A has an orthogonal involution σ, the exponent of A
+divides 2. It follows that OP(VF ) (−2λ1 ) ∈ Ker(f ) descends to an invertible sheaf on SB(A). Restricting to X, we get an invertible sheaf
+which we will label OX (−2λ1 ).
+Let C(A, σ) denote the Cliﬀord Algebra associated to the pair (A, σ)
+(confer [17, II.8.7]). Since C(A, σ) is deﬁned as a quotient of the tensor
+algebra of A, there exists a canonical F -linear map c : A → C(A, σ)
+(confer [17, (II.8.13)]).
+We deﬁne a subsheaf J of the constant sheaf C(A, σ) on I(A, σ).
+If I ∈ I(A, σ) is an isotropic right ideal of reduced dimension 1, then
+the ﬁber over I is the right ideal of C(A, σ) generated by c(I). The
+endomorphism ring EndX (J ) is isomorphic to C(A, σ)
+Remark 7.1. If A = End(V ) for some ﬁnite dimensional vector space
+V over F , then σ = σq is the adjoint involution with respect to some
+non-singular quadratic form q ∈ S 2 (V ∗ ). In this case, The isomorphism
+SB(End(V )) = P(V ) identiﬁes I(End(V ), σq ) with the quadric Z(q).
+Also, if q is maximally isotropic (i.e. there exists an isotropic subspace
+of dimension n in V ), then I(End(V ), σq ) = G/P , where G = Spin(q)
+is a split group of type Dn , and P = Pα1 . So I(A, σ) is a twisted
+projective homogeneous variety. We say that (A, σ) is split if A =
+End(V ) and σ = σq , where q is maximally isotropic. Finally, when
+∗
+∗
+X = G/P , J = OG/P (−λn−1 ) ⊗F W+ ⊕ OG/P (−λn ) ⊗F W− , where
+W+ = V (−λn−1 ) and W− = V (−λn ), the two half-spin representation
+spaces associated to the weights −λn−1 and −λn (confer [22, page 574]).
+Let
+n−2
+
+OX (−2λ1 )⊗i ⊕ I ⊗ OX (−2λ1 )⊗i
+
+T :=
+
+J ⊗ OX (−2λ1 )⊗(n−1) .
+
+i=0
+
+We will show that T is a tilting bundle for I(A, σ).
+Proposition 7.2. The sheaf T generates D(Qcoh(X))
+
+A DERIVED EQUIVALENCE FOR SOME TWISTED PROJECTIVE HOMOGENEOUS VARIETIES
+13
+
+Proof. This is similar to the proof of Proposition 5.5. We ﬁrst check
+that the proposition is true in the split case, where the argument is
+similar to Lemma 5.4. So we may assume that A = EndF (V ) and
+σ = σq for a maximally isotropic quadratic form q ∈ S 2 (V ∗ ), I(A, σ) =
+Z(q) = Spin(q)/Pα1 . The sheaf T decomposes into a sum with terms
+OG/P (−iλ), OG/P (−2(n − 1)λ1 − λn−1 ) and OG/P (−2(n − 1)λ1 − λn ),
+where 0 ≤ i ≤ 2n − 3. It is shown in [16, section 4] that these sheaves
+form a strong exceptional collection. In particular,
+OG/P (−iλ1 ), OG/P (−(2n − 2)λ1 − λn−1 ), OG/P (−(2n − 2)λ1 − λn ),
+= D b (Coh(Z(q))).
+Thus we conclude that T generates D(Qcoh(X)) in the split case. The
+arbitrary case follows by extending scalars to F , and reasoning as in
+Proposition 5.5.
+Theorem 7.3. The sheaf T has no self-extensions.
+Proof. We extend scalars to F , arguing as in Theorem 5.1. The sheaf T
+decomposes into a sum of sheaves with terms OG/P (−(2n−2)λ1 −λn−1 ),
+OG/P (−(2n − 2)λ1 − λn ), and OX (jλ1 ), where −(2n − 2) < j ≤ 0. So
+it suﬃces to check that
+H i (X, OX (±jλ1 )) = 0,
+H i (X, J1∗ ⊗ OX (jλ1 )) = 0,
+H i (X, J1 ⊗ OX (−jλ1 )) = 0,
+H i (X, J2∗ ⊗ OX (jλ1 )) = 0,
+H i (X, J2 ⊗ OX (−jλ1 )) = 0,
+H i (X, J1 ⊗ J2∗ ) = 0,
+H i (X, J2 ⊗ J1∗ ) = 0,
+for i > 0 and −(2n − 2) < j ≤ 0.
+The highest weights of the corresponding P -representations for these
+sheaves are, respectively,
+±jλ1 ,
+±(−λn + jλ1 ),
+±(−λn−1 + jλ1 ),
+±(λn−1 − λn ).
+
+14
+
+MARK BLUNK
+
+All of these weights are either singular or dominant. Thus by Theorem
+4.1, all of the non-zero cohomology above vanishes.
+Remark 7.4. As in the Severi-Brauer case, all of the weights jλi are
+singular for j < 0, so H 0 (X, OX (jλ1 )) = 0. It follows that we have
+the following upper triangular presentation of the global endomorphism
+rings End(T ) :
+
+
+F ∗ ∗ ∗ ···
+∗
+0 A ∗ ∗ ···
+∗ 
+
+
+0 0 F ∗ ···
+∗ 
+.
+End(T ) =  . . . . .
+.
+.
+. . .
+
+.
+.
+.
+.
+.
+. . .
+
+0 0 0 ··· A
+0 
+0 0 0 · · · 0 C(A, σ)
+As in the Severi-Brauer case, we see that End(T ) is upper triangular,
+with the Tits Algebras appearing along the diagonal terms.
+Theorem 7.5. The ring End(T ) has ﬁnite global dimension.
+Proof. The proof follows the same line of reasoning as in Theorem 5.3,
+since all diagonal terms are semisimple algebras.
+Theorem 7.6. The sheaf T induces a natural equivalence
+RHom(T , −) : D b (Coh(X)) → D b (
+
+mod − End(T )).
+
+Proof. We need to verify that T is a tilting sheaf. It has no self extensions by Theorem 7.3. By Proposition 7.2 and Theorem 3.2, we see
+that T = D b (Coh(X)). The ring End(T ) has ﬁnite global dimension
+by Theorem 7.5, and so the statement follows from Theorem 2.1.
+
+8. K-theory
+In each case discussed above, the ring End(T ) has an upper triangular presentation, with the Tits Algebras of the corresponding simply
+connected linear algebraic group appearing along the diagonal. Thus
+in each case, End(T ) a nilpotent ideal I, consisting of the strictly upper triangular terms. By applying the K-theory functor (confer [25,
+Theorem 1.98]) to the natural equivalences found in Theorems 5.6, 6.4,
+and 7.6, we can express the Quillen K-theory of each variety as sum
+of the K-theory of the algebras appearing along the diagonal. The
+K-theory is not aﬀected if we replace End(T ) by End(T )/I, and we
+recovers results found in [22, 10.2, 10.3].
+
+A DERIVED EQUIVALENCE FOR SOME TWISTED PROJECTIVE HOMOGENEOUS VARIETIES
+15
+
+Theorem 8.1. The tilting bundles induce the following isomorphisms:
+n−1
+∼
+
+K∗ (A⊗i )
+
+K∗ (SB(A)) →
+i=0
+∼
+
+K∗ (A⊗d(a) )
+
+K∗ (SB(r, A)) →
+a
+
+n−2
+∼
+
+K∗ (I(A, σ)) →
+
+K∗ (F ) ⊕ K∗ (A)
+
+K∗ (C0 (A, σ)).
+
+i=0
+
+References
+[1] M. Artin, Brauer-Severi varieties, Brauer groups in ring theory and algebraic
+geometry (Wilrijk, 1981), Lecture Notes in Math., vol. 917, Springer, Berlin,
+1982, pp. 194–210. MR MR657430 (83j:14015)
+[2] Maurice Auslander, Idun Reiten, and Sverre O. Smalø, Representation theory of Artin algebras, Cambridge Studies in Advanced Mathematics, vol. 36,
+Cambridge University Press, Cambridge, 1995. MR 1314422 (96c:16015)
+[3] Dagmar Baer, Tilting sheaves in representation theory of algebras, Manuscripta
+Math. 60 (1988), no. 3, 323–347. MR 928291 (89c:14017)
+[4] Robert J. Baston and Michael G. Eastwood, The Penrose transform, Oxford
+Mathematical Monographs, The Clarendon Press Oxford University Press,
+New York, 1989, Its interaction with representation theory, Oxford Science
+Publications. MR 1038279 (92j:32112)
+[5] A. A. Be˘
+ılinson, Coherent sheaves on Pn and problems in linear algebra, Funktsional. Anal. i Prilozhen. 12 (1978), no. 3, 68–69. MR 509388 (80c:14010b)
+[6] Marcello Bernardara, A semiorthogonal decomposition for Brauer-Severi
+schemes, Math. Nachr. 282 (2009), no. 10, 1406–1413. MR 2571702
+(2010k:14021)
+[7] M. Blunk, S.J. Sierra, and S.P. Smith, A derived equivalence for del pezzo
+surfaces of degree 6 over an arbitrary ﬁeld, Accepted January 2011 by the
+Journal of K-theory. Available online, 2011.
+[8] Mark Blunk, Del Pezzo surfaces of degree 6 over an arbitrary ﬁeld, J. Algebra
+323 (2010), no. 1, 42–58. MR 2564828 (2011b:14076)
+[9] Christian B¨hning, Derived categories of coherent sheaves on rational homoo
+geneous manifolds, Doc. Math. 11 (2006), 261–331 (electronic). MR 2262935
+(2008f:14032)
+[10] A. Bondal and M. van den Bergh, Generators and representability of functors
+in commutative and noncommutative geometry, Mosc. Math. J. 3 (2003), no. 1,
+1–36, 258. MR 1996800 (2004h:18009)
+[11] Nicolas Bourbaki, Lie groups and Lie algebras. Chapters 4–6, Elements of
+Mathematics (Berlin), Springer-Verlag, Berlin, 2002, Translated from the 1968
+French original by Andrew Pressley. MR MR1890629 (2003a:17001)
+[12] Daniele Faenzi and Laurent Manivel, On the derived category of the cayley
+plane ii, Unpublished, 2012.
+
+16
+
+MARK BLUNK
+
+[13] Sergei I. Gelfand and Yuri I. Manin, Methods of homological algebra, second ed., Springer Monographs in Mathematics, Springer-Verlag, Berlin, 2003.
+MR 1950475 (2003m:18001)
+[14] D. Huybrechts, Fourier-Mukai transforms in algebraic geometry, Oxford Mathematical Monographs, The Clarendon Press Oxford University Press, Oxford,
+2006. MR 2244106 (2007f:14013)
+[15] Jens Carsten Jantzen, Representations of algebraic groups, second ed., Mathematical Surveys and Monographs, vol. 107, American Mathematical Society,
+Providence, RI, 2003. MR 2015057 (2004h:20061)
+[16] M. M. Kapranov, On the derived categories of coherent sheaves on some homogeneous spaces, Invent. Math. 92 (1988), no. 3, 479–508. MR MR939472
+(89g:18018)
+[17] Max-Albert Knus, Alexander Merkurjev, Markus Rost, and Jean-Pierre Tignol, The book of involutions, American Mathematical Society Colloquium Publications, vol. 44, American Mathematical Society, Providence, RI, 1998, With
+a preface in French by J. Tits. MR MR1632779 (2000a:16031)
+[18] Alexander Kuznetsov, Exceptional collections for Grassmannians of isotropic
+lines, Proc. Lond. Math. Soc. (3) 97 (2008), no. 1, 155–182. MR 2434094
+(2009e:14076)
+[19] Alexander Kuznetsov and Alexander Polishchuk, Exceptional collections on
+isotropic grassmannians, Unpublished, 2011.
+[20] A. S. Merkur′ ev, Zero-dimensional cycles on some involutive varieties, Zap.
+Nauchn. Sem. S.-Peterburg. Otdel. Mat. Inst. Steklov. (POMI) 227 (1995),
+no. Voprosy Teor. Predstav. Algebr i Grupp. 4, 93–105, 158. MR 1374563
+(96m:14008)
+[21] Amnon Neeman, The connection between the K-theory localization theorem
+of Thomason, Trobaugh and Yao and the smashing subcategories of Bous´
+ﬁeld and Ravenel, Ann. Sci. Ecole Norm. Sup. (4) 25 (1992), no. 5, 547–566.
+MR 1191736 (93k:18015)
+[22] I. A. Panin, On the algebraic K-theory of twisted ﬂag varieties, K-Theory 8
+(1994), no. 6, 541–585. MR MR1326751 (96d:19006)
+[23] T. A. Springer, Linear algebraic groups, second ed., Progress in Mathematics,
+vol. 9, Birkh¨user Boston Inc., Boston, MA, 1998. MR 1642713 (99h:20075)
+a
+[24] David Tao, A variety associated to an algebra with involution, J. Algebra 168
+(1994), no. 2, 479–520. MR MR1292777 (95j:19005)
+[25] R. W. Thomason and Thomas Trobaugh, Higher algebraic K-theory of schemes
+and of derived categories, The Grothendieck Festschrift, Vol. III, Progr. Math.,
+vol. 88, Birkh¨user Boston, Boston, MA, 1990, pp. 247–435. MR 1106918
+a
+(92f:19001)
+Department of Mathematics, Univ. of British Columbia, Vancouver,
+BC V6T 1Z2, Canada
+E-mail address: mblunk@math.ubc.ca
+
+
