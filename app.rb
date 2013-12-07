@@ -7,7 +7,6 @@ require 'lib/bot'
 get '/' do
   bot = Bot.new
   output = bot.tweet
-  output
-  "you tweeted! @notmarkblunk"
+  "you tweeted! @notmarkblunk : #{output}"
 end
 

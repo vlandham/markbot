@@ -2,7 +2,8 @@ require 'twitter'
 require 'marky_markov'
 
 class Bot
-  DICTIONARY = File.join(File.expand_path(File.dirname(__FILE__)), "..", "hikes.txt")
+  TEXT_DIR = File.join(File.expand_path(File.dirname(__FILE__)), "..", "text")
+  TEXTS = ["hikes.txt", "mark_math.txt"]
 
   def initialize external_config = {}
     @client = Twitter::REST::Client.new do |config|
@@ -27,7 +28,19 @@ class Bot
 
   def create_tweet
     @markov = MarkyMarkov::TemporaryDictionary.new
-    @markov.parse_file DICTIONARY
+    dictonary = ""
+    if rand() > 0.4
+      dictonary = TEXTS[0]
+    else
+      dictonary = TEXTS[1]
+    end
+    @markov.parse_file File.join(TEXT_DIR, dictonary)
+
+    # add some zappa
+    if rand() > 0.2
+      @markov.parse_file File.join(TEXT_DIR, "zappa.txt")
+    end
+
     raw_text = @markov.generate_n_words 22
     text_length = (110..135).to_a.sample
     tweet_text = truncate(raw_text, text_length)
@@ -39,8 +52,7 @@ class Bot
   def tweet
     text = create_tweet
     new_tweet = @client.update(text)
-    puts new_tweet
-    new_tweet
+    text
   end
 end
 
