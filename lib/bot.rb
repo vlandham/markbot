@@ -37,7 +37,7 @@ class Bot
     @markov.parse_file File.join(TEXT_DIR, dictonary)
 
     # add some zappa
-    if rand() > 0.2
+    if rand() < 0.2
       @markov.parse_file File.join(TEXT_DIR, "zappa.txt")
     end
 
