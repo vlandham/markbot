@@ -44,6 +44,5 @@ class Bot
   end
 end
 
-bot = Bot.new
-
-bot.tweet
+# bot = Bot.new
+# bot.tweet
