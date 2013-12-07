@@ -17,6 +17,7 @@ GEM
     memoizable (0.2.0)
       thread_safe (~> 0.1.3)
     multipart-post (1.2.0)
+    newrelic_rpm (3.3.4.1)
     ox (1.9.4)
     rack (1.5.2)
     rack-protection (1.5.1)
@@ -46,5 +47,6 @@ PLATFORMS
 
 DEPENDENCIES
   marky_markov
+  newrelic_rpm
   sinatra
   twitter
