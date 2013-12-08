@@ -26,7 +26,24 @@ class Bot
     return new_text
   end
 
-  def create_tweet
+  def end_at_punctuation(text)
+    loc = text.rindex(/[.,?!]/)
+    # if 80% of the text is before the
+    # period, then truncate to the period
+    if loc
+      puts loc
+      ratio = (loc) / text.length.to_f
+      if ratio > 0.5
+        text = text[0..loc]
+      end
+      if text[loc] == ","
+        text[loc] = "."
+      end
+    end
+    text
+  end
+
+  def load_markov
     @markov = MarkyMarkov::TemporaryDictionary.new
     dictonary = ""
     if rand() > 0.4
@@ -40,14 +57,35 @@ class Bot
     if rand() < 0.2
       @markov.parse_file File.join(TEXT_DIR, "zappa.txt")
     end
+    @markov
+  end
+
+  def create_sentences
+    load_markov
+    sentences = @markov.generate_30_sentences
+    sentences = sentences.split(".")
+    sentences = sentences.collect {|s| s + "."}
+    sentences = sentences.keep_if {|s| s.length < 140}
+    sentence = sentences.sample
+    puts sentence
+
+  end
+
+  def create_tweet
+    load_markov
 
     raw_text = @markov.generate_n_words 22
-    text_length = (110..135).to_a.sample
-    tweet_text = truncate(raw_text, text_length)
+    tweet_text = end_at_punctuation(raw_text)
+    if tweet_text.length > 140
+      puts 'shortening'
+      text_length = (110..135).to_a.sample
+      tweet_text = truncate(raw_text, text_length)
+    end
     puts tweet_text
 
     tweet_text
   end
+
 
   def tweet
     text = create_tweet
@@ -57,4 +95,4 @@ class Bot
 end
 
 # bot = Bot.new
-# bot.tweet
+# bot.create_tweet
